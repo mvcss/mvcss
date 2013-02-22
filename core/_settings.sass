@@ -1,0 +1,55 @@
+//-------------------------------------
+//  Settings
+//-------------------------------------
+
+// ----- @font-face ----- //
+
+// ...
+
+// ----- Variables ----- //
+
+// Colors
+
+$color-base: #222
+$color-highlight: #0053C9
+
+// Fonts
+
+$font-base: sans-serif
+$font-header: sans-serif
+
+// ----- Mixins ----- //
+
+=respond-to($val, $query: min-width, $media: screen)
+  @media #{$media} and ($query: $val)
+    @content
+
+// ----- Extends ----- //
+
+%debug
+  background-color: pink !important
+
+%ellipsis
+  overflow: hidden
+  -ms-text-overflow: ellipsis
+  -o-text-overflow: ellipsis
+  text-overflow: ellipsis
+  white-space: nowrap
+
+%group
+  zoom: 1
+  &:before,
+  &:after
+    content: ''
+    display: table
+  &:after
+    clear: both
+
+%ir
+  background-color: transparent
+  border: 0
+  color: transparent
+  font: 0/0 a
+  text-shadow: none
+
+// ----- Animations ----- //
