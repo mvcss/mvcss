@@ -31,25 +31,22 @@ $font-header: sans-serif
 
 %ellipsis
   overflow: hidden
-  -ms-text-overflow: ellipsis
-  -o-text-overflow: ellipsis
   text-overflow: ellipsis
   white-space: nowrap
 
-%group
-  zoom: 1
-  &:before,
-  &:after
-    content: ''
-    display: table
-  &:after
-    clear: both
+%group:after
+  clear: both
+  content: ''
+  display: table
 
 %ir
   background-color: transparent
   border: 0
-  color: transparent
-  font: 0/0 a
-  text-shadow: none
+  overflow: hidden
+  &:before
+    content: ''
+    display: block
+    width: 0
+    height: 150%
 
 // ----- Animations ----- //
