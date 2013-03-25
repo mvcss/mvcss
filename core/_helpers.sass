@@ -1,0 +1,63 @@
+//-------------------------------------
+//  Helpers
+//-------------------------------------
+
+// ----- Extends ----- //
+
+// @extend %debug
+// -- Utility for debugging layout issues
+
+%debug
+  background-color: pink !important
+
+// @extend %ellipsis
+// -- CSS text truncation
+
+%ellipsis
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+// @extend %group
+// -- Clearfix
+
+%group:after
+  clear: both
+  content: ''
+  display: table
+
+// @extend %ir
+// -- Image replacement
+
+%ir
+  background-color: transparent
+  border: 0
+  overflow: hidden
+  &:before
+    content: ''
+    display: block
+    width: 0
+    height: 150%
+
+// ----- Functions ----- //
+
+// em() Function
+// -- Sizes a pixel value to appropriate ems
+
+@function em($target, $context: $base-font-size)
+  @if ($target == 0)
+    @return 0
+  @else
+    @return #{$target / $context}em
+
+// ----- Mixins ----- //
+
+// +respond-to()
+// -- Generates a specified media query, which
+//    defaults to 'min-width' and 'screen'
+
+=respond-to($val, $query: min-width, $media: screen)
+  @media #{$media} and ($query: $val)
+    @content
+
+// ----- Animations ----- //

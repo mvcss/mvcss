@@ -18,35 +18,7 @@ $color-highlight: #0053C9
 $font-base: sans-serif
 $font-header: sans-serif
 
-// ----- Mixins ----- //
+// Typography
 
-=respond-to($val, $query: min-width, $media: screen)
-  @media #{$media} and ($query: $val)
-    @content
-
-// ----- Extends ----- //
-
-%debug
-  background-color: pink !important
-
-%ellipsis
-  overflow: hidden
-  text-overflow: ellipsis
-  white-space: nowrap
-
-%group:after
-  clear: both
-  content: ''
-  display: table
-
-%ir
-  background-color: transparent
-  border: 0
-  overflow: hidden
-  &:before
-    content: ''
-    display: block
-    width: 0
-    height: 150%
-
-// ----- Animations ----- //
+$base-font-size: 16px
+$base-line-height: 1.5

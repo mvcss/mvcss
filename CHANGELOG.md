@@ -1,3 +1,11 @@
+## 3.0.0 (March 25, 2013)
+
+- Add new **Helper** core file
+- Move extends, mixins, animations to new **Helper** core file
+- Add `$base-font-size` and `$base-line-height` variables
+- Add `em()` function
+- Add better documentation for **Helper** core file elements
+
 ## 2.1.0 (March 5, 2013)
 
 - Remove **States** as part of **Core**

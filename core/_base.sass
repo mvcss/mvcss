@@ -4,10 +4,11 @@
 
 html
   background: #FFF
-  font-size: 16px
+  font-size: $base-font-size
 body
   color: $color-base
-  font: 62.5%/1.5 $font-base
+  font-family: $font-base
+  line-height: $base-line-height
 
 // ----- Block Content ----- //
 
@@ -17,22 +18,22 @@ h1, h2, h3,
 h4, h5, h6
   font-weight: bold
 h1
-  font-size: 4em
+  font-size: em(40px)
 h2
-  font-size: 3.5em
+  font-size: em(35px)
 h3
-  font-size: 3em
+  font-size: em(30px)
 h4
-  font-size: 2.5em
+  font-size: em(25px)
 h5
-  font-size: 2em
+  font-size: em(20px)
 h6
-  font-size: 1.6em
+  font-size: em(16px)
 
 // Paragraphs
 
 p
-  font-size: 1.6em
+  font-size: em($base-font-size)
 
 // ----- Inline Content ----- //
 
