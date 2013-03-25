@@ -5,6 +5,7 @@
 - Add `$base-font-size` and `$base-line-height` variables
 - Add `em()` function
 - Add better documentation for **Helper** core file elements
+- Add better documentation for **Application** file imports
 
 ## 2.1.0 (March 5, 2013)
 
