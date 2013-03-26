@@ -3,11 +3,11 @@
 //-------------------------------------
 
 html
-  background: #FFF
-  color: $content-color
-  font-size: $content-fontSize
-  font-family: $content-fontFamily
-  line-height: $content-lineHeight
+  background: $l-background
+  color: $c-color
+  font-size: $c-fontSize
+  font-family: $c-fontFamily
+  line-height: $c-lineHeight
 
 // ----- Block Content ----- //
 
@@ -15,31 +15,32 @@ html
 
 h1, h2, h3,
 h4, h5, h6
+  font-family: $c--header-fontFamily
   font-weight: bold
-h1
+h1, .h1
   font-size: em(40px)
-h2
+h2, .h2
   font-size: em(35px)
-h3
+h3, .h3
   font-size: em(30px)
-h4
+h4, .h4
   font-size: em(25px)
-h5
+h5, .h5
   font-size: em(20px)
-h6
+h6, .h6
   font-size: em(16px)
 
 // Paragraphs
 
 p
-  font-size: em($content-fontSize)
+  font-size: em($c-fontSize)
 
 // ----- Inline Content ----- //
 
 // Links
 
 a
-  color: $content-color--highlight
+  color: $c-color--highlight
   text-decoration: none
   &:hover,
   &:focus

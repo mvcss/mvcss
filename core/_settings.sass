@@ -8,16 +8,46 @@
 
 // ----- Variables ----- //
 
-// $module-property--modifier
-// $moduleName-property--modifier
-// $moduleName-propertyName--modifier
-// $moduleName-propertyName--modifierName
+// Examples:
+// ------------------
+// .module-property
+// .moduleName-property
+// ------------------
+
+// ----- Sub-module ----- //
+
+// Examples:
+// ------------------
+// .module-sub-property
+// .moduleName-sub-property
+// .moduleName-subName-property
+// ------------------
+
+// ----- Modifiers ----- //
+
+// Examples:
+// ------------------
+// .module--modifier-property
+// .moduleName--modifier-property
+// .module-sub--modifier-property
+// .moduleName-sub--modifier-property
+// .moduleName-subName--modifer-property
+// ------------------
 
 // Content
+// -- color, font-size, line-height
 
-$content-color: #222
-$content-color--highlight: #0053C9
-$content-fontFamily: sans-serif
-$content-fontFamily--header: sans-serif
-$content-fontSize: 16px
-$content-lineHeight: 1.5
+$c-color: #222
+$c--highlight-color: #0053C9
+$c-fontFamily: sans-serif
+$c--header-fontFamily: sans-serif
+$c-fontSize: 16px
+$c-lineHeight: 1.5
+
+// Layout
+// -- backgrounds, borders, margin, padding
+
+$l-background: #FFF
+$l-borderRadius: 3px
+$l-border: 1px solid $content-color
+$l-boxShadow: 0 1px 2px rgba($content-color, 0.25)
