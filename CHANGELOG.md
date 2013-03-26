@@ -1,4 +1,4 @@
-## 3.0.0 (March 25, 2013)
+## 3.0.0 (March 26, 2013)
 
 - Add new **Helper** core file
 - Move extends, mixins, animations to new **Helper** core file
