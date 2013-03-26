@@ -3,6 +3,7 @@
 - Add new **Helper** core file
 - Move extends, mixins, animations to new **Helper** core file
 - Change **Core Reset** to **Normalize v2.1.0**
+- Add better variable naming conventions
 - Add `$base-font-size` and `$base-line-height` variables
 - Add `em()` function
 - Add better documentation for **Helper** core file elements

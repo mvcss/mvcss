@@ -44,7 +44,7 @@
 // em() Function
 // -- Sizes a pixel value to appropriate ems
 
-@function em($target, $context: $base-font-size)
+@function em($target, $context: $content-fontSize)
   @if ($target == 0)
     @return 0
   @else

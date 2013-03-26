@@ -4,11 +4,10 @@
 
 html
   background: #FFF
-  font-size: $base-font-size
-body
-  color: $color-base
-  font-family: $font-base
-  line-height: $base-line-height
+  color: $content-color
+  font-size: $content-fontSize
+  font-family: $content-fontFamily
+  line-height: $content-lineHeight
 
 // ----- Block Content ----- //
 
@@ -33,14 +32,14 @@ h6
 // Paragraphs
 
 p
-  font-size: em($base-font-size)
+  font-size: em($content-fontSize)
 
 // ----- Inline Content ----- //
 
 // Links
 
 a
-  color: $color-highlight
+  color: $content-color--highlight
   text-decoration: none
   &:hover,
   &:focus
