@@ -34,21 +34,32 @@
 // .moduleName-subName--modifer-property
 // ------------------
 
-// Content
-// -- color, font-size, line-height
+// Base Colors
 
-$c-color: #222
-$c-link-color: #0053C9
-$c-fontFamily: sans-serif
-$c--header-fontFamily: sans-serif
-$c-fontSize: 16px
-$c-lineHeight: 1.5
+$base-background: #FFF
+$base-color: #222
+$base-link-color: #0053C9
+
+// Base Borders & Box Shadows
+
+$base-border: 1px solid $base-color
+$base-borderRadius: 3px
+$base-boxShadow: 0 1px 2px rgba($base-color, 0.25)
+
+// Base Content
+
+$base-fontFamily: sans-serif
+$base-fontSize: 16px
+$base-lineHeight: 1.5
+
+// Base Layout
+
+$base-whitespace: 20px
+
+// Content
+
+$c-header-fontFamily: sans-serif
 
 // Layout
-// -- backgrounds, borders, margin, padding
 
-$l-background: #FFF
-$l-borderRadius: 3px
-$l-border: 1px solid $c-color
-$l-boxShadow: 0 1px 2px rgba($c-color, 0.25)
-$l-cell-width: 980px
+$l-maxWidth: 980px
