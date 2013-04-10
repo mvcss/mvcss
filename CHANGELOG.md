@@ -1,10 +1,10 @@
 ## 3.0.0 (March 26, 2013)
 
 - Add new **Helper** Core file
-- Add new **Content** Module file (replaces **Containers** Module file)
-- Add new **Layout** Module file
+- Add new **Content** Core file (replaces **Containers** Module file)
+- Add new **Layout** Core file
 - Move extends, mixins, animations to new **Helper** core file
-- Change **Core - Reset** to **Normalize v2.1.0**
+- Change **Reset** Core file to **Normalize v2.1.0**
 - Add better variable naming conventions
 - Add more base variables
 - Add `em()` function
