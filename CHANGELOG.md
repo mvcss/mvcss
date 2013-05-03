@@ -1,3 +1,17 @@
+## 3.0.0 (March 26, 2013)
+
+- Add new **Helper** Core file
+- Add new **Content** Core file (replaces **Containers** Module file)
+- Add new **Layout** Core file
+- Move extends, mixins, animations to new **Helper** core file
+- Change **Reset** Core file to **Normalize v2.1.0**
+- Add better variable naming conventions
+- Add more base variables
+- Add `em()` function
+- Add better documentation for **Helper** Core file elements
+- Add better documentation for **Application** file imports
+- Add better documentation for variables
+
 ## 2.1.0 (March 5, 2013)
 
 - Remove **States** as part of **Core**

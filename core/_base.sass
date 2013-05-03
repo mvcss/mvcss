@@ -3,51 +3,25 @@
 //-------------------------------------
 
 html
-  background: #FFF
-  font-size: 16px
+  font-size: $base-fontSize
+
 body
-  color: $color-base
-  font: 62.5%/1.5 $font-base
+  background: $base-background
+  color: $base-color
+  font-family: $base-fontFamily
+  font-size: 100%
+  line-height: $base-lineHeight
 
 // ----- Block Content ----- //
 
-// Headings
-
-h1, h2, h3,
-h4, h5, h6
-  font-weight: bold
-h1
-  font-size: 4em
-h2
-  font-size: 3.5em
-h3
-  font-size: 3em
-h4
-  font-size: 2.5em
-h5
-  font-size: 2em
-h6
-  font-size: 1.6em
-
-// Paragraphs
-
 p
-  font-size: 1.6em
+  font-size: em($base-fontSize)
 
 // ----- Inline Content ----- //
 
-// Links
-
 a
-  color: $color-highlight
+  color: $base-link-color
   text-decoration: none
   &:hover,
   &:focus
     text-decoration: underline
-
-// Formatting
-
-em
-  font-style: italic
-strong
-  font-weight: bold
