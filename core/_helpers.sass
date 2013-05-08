@@ -50,6 +50,12 @@
   @else
     @return #{$target / $context}em
 
+// rem() Function
+// -- Sizes a pixel value to appropriate ems
+
+@function rem($size)
+  @return #{$size / $base-fontSize}rem
+
 // ----- Mixins ----- //
 
 // +respond-to()
