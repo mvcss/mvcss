@@ -8,6 +8,7 @@
 - Add better variable naming conventions
 - Add more base variables
 - Add `em()` function
+- Add `rem()` function
 - Add better documentation for **Helper** Core file elements
 - Add better documentation for **Application** file imports
 - Add better documentation for variables
