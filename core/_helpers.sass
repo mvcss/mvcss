@@ -41,7 +41,7 @@
 
 // ----- Functions ----- //
 
-// em() Function
+// em()
 // -- Sizes a pixel value to appropriate ems
 
 @function em($target, $context: $base-fontSize)
@@ -50,8 +50,8 @@
   @else
     @return #{$target / $context}em
 
-// rem() Function
-// -- Sizes a pixel value to appropriate ems
+// rem()
+// -- Sizes a pixel value to appropriate rems
 
 @function rem($size)
   @return #{$size / $base-fontSize}rem
