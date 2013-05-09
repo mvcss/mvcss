@@ -1,4 +1,4 @@
-## 3.0.0 (March 26, 2013)
+## 3.0.0
 
 - Add new **Helper** Core file
 - Add new **Content** Core file (replaces **Containers** Module file)
@@ -13,14 +13,17 @@
 - Add better documentation for **Application** file imports
 - Add better documentation for variables
 
-## 2.1.0 (March 5, 2013)
+## 2.1.0
+**March 5, 2013**
 
 - Remove **States** as part of **Core**
 
-## 2.0.1 (March 5, 2013)
+## 2.0.1
+**March 5, 2013**
 
 - Modify the ellipsis, group, and ir extends
 
-## 2.0.0 (February 22, 2013)
+## 2.0.0
+**February 22, 2013**
 
 - Initial version applied
