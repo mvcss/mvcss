@@ -9,6 +9,7 @@
 - Add more base variables
 - Add `em()` function
 - Add `rem()` function
+- Use `rems` as the default typographic unit
 - Add better documentation for **Core - Helper** file elements
 - Add better documentation for **Application** file imports
 - Add better documentation for variables
