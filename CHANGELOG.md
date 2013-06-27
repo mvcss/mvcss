@@ -1,3 +1,7 @@
+## 3.0.1
+
+- Change the comment hierarchy
+
 ## 3.0.0
 
 - Add new **Core - Helper** file

@@ -1,33 +1,34 @@
-//-------------------------------------
-//  Helpers
-//-------------------------------------
+// *************************************
+//
+//   Helpers
+//   -> Extends, Functions, Mixins, Animations
+//
+// *************************************
 
-// ----- Extends ----- //
+// -------------------------------------
+//   Extends
+// -------------------------------------
 
-// @extend %debug
-// -- Utility for debugging layout issues
+// ----- Debug ----- //
 
 %debug
   background-color: pink !important
 
-// @extend %ellipsis
-// -- CSS text truncation
+// ----- Ellipsis ----- //
 
 %ellipsis
   overflow: hidden
   text-overflow: ellipsis
   white-space: nowrap
 
-// @extend %group
-// -- Clearfix
+// ----- Clearfix ----- //
 
 %group:after
   clear: both
   content: ''
   display: table
 
-// @extend %ir
-// -- Image replacement
+// ----- Image Replacement ----- //
 
 %ir
   background-color: transparent
@@ -39,10 +40,11 @@
     width: 0
     height: 150%
 
-// ----- Functions ----- //
+// -------------------------------------
+//   Functions
+// -------------------------------------
 
-// em()
-// -- Sizes a pixel value to appropriate ems
+// ----- em ----- //
 
 @function em($target, $context: $base-fontSize)
   @if ($target == 0)
@@ -50,20 +52,22 @@
   @else
     @return #{$target / $context}em
 
-// rem()
-// -- Sizes a pixel value to appropriate rems
+// ----- rem ----- //
 
 @function rem($size)
   @return #{$size / $base-fontSize}rem
 
-// ----- Mixins ----- //
+// -------------------------------------
+//   Mixins
+// -------------------------------------
 
-// +respond-to()
-// -- Generates a specified media query, which
-//    defaults to 'min-width' and 'screen'
+// ----- Respond-to ----- //
 
 =respond-to($val, $query: min-width, $media: screen)
   @media #{$media} and ($query: $val)
     @content
 
-// ----- Animations ----- //
+// -------------------------------------
+//   Animations
+// -------------------------------------
+
