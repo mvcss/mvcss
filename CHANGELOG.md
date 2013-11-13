@@ -1,3 +1,7 @@
+## 3.0.2
+
+- Update Normalize to v2.1.3
+
 ## 3.0.1
 
 - Change the comment hierarchy
