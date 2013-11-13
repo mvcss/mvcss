@@ -1,34 +1,57 @@
 // *************************************
 //
 //   Base
-//   -> Base-level tags (body, p, etc.)
+//   -> Tag-level settings
 //
 // *************************************
 
 html
+  @extend .tcb
+  background: $color-background
   font-size: $base-fontSize
+  font-family: $font-base
+  line-height: $base-lineHeight
 
 body
-  background: $base-background
-  color: $base-color
-  font-family: $base-fontFamily
   font-size: 100%
-  line-height: $base-lineHeight
 
 // -------------------------------------
 //   Block Content
 // -------------------------------------
 
-p
+ul, p
+  @extend .mbm
+  @extend .mtf
   font-size: rem($base-fontSize)
+
+li
+  @extend .mbs
+  @extend .mtf
+
+// ----- Headers ----- //
+
+h1, .h1,
+h2, .h2
+  @extend .mbxs
+  @extend .mtf
+  font-weight: bold
+  line-height: 1.2
+
+h1, .h1
+  font-size: 200%
+
+h2, .h2
+  font-size: 150%
 
 // -------------------------------------
 //   Inline Content
 // -------------------------------------
 
 a
-  color: $base-link-color
+  @extend .tch
+  border-bottom: 2px solid lighten($color-base, 70%)
   text-decoration: none
   &:hover,
   &:focus
-    text-decoration: underline
+    border-bottom-color: $color-subdue
+    color: $color-subdue
