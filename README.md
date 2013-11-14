@@ -24,6 +24,11 @@ grunt build
 
 You should now have a `css` directory at the root with the compiled CSS files.
 
+## Testing
+
+Once you have compiled into `application.css`, you can run `grunt test` to run
+`csslint` and `csscss` on the file.
+
 ## License
 MVCSS is licensed under the MIT License.
 
