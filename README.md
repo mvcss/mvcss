@@ -3,7 +3,13 @@
 ## Compiling
 
 If you want to compile MVCSS into an `application.css` (and `application.min.css`)
-file, you'll need to do the following:
+file, you'll need to first install [Grunt.js](http://gruntjs.com):
+
+```shell
+npm install -g grunt-cli
+```
+
+Next, jump into the `_build` directory and install dependencies:
 
 ```shell
 cd _build
