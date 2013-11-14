@@ -2,10 +2,12 @@
 
 ## Compiling
 
-If you want to compile MVCSS into an `application.css` (and `application.min.css`) file:
+If you want to compile MVCSS into an `application.css` (and `application.min.css`)
+file, you'll need to do the following:
 
 ```shell
-npm install grunt
+cd _build
+npm install
 ```
 
 And then run:
@@ -13,6 +15,8 @@ And then run:
 ```shell
 grunt build
 ```
+
+You should now have a `css` directory at the root with the compiled CSS files.
 
 ## License
 MVCSS is licensed under the MIT License.
