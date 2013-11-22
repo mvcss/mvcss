@@ -1,3 +1,11 @@
+## 4.0.0
+
+- Add a completely new structure
+- **Core** becomes **Foundation** (same files)
+- Add a new layer called **Components**
+- Modules become **Structures**
+- Add initial **Components**
+
 ## 3.0.2
 
 - Update Normalize to v2.1.3
