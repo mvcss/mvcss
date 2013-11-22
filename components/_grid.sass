@@ -27,7 +27,7 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
 // -------------------------------------
 
 #{$grid-selector}grid
-  @extend %group  // Uses MVCSS clearfix
+  @extend %group
   @extend .db
   margin-left: -$grid-gutter / 2
   margin-right: -$grid-gutter / 2
