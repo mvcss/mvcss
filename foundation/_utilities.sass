@@ -11,6 +11,8 @@
 
 .bcb
   background: $color-base
+.bcbg
+  background: $color-background
 .bch
   background: $color-highlight
 .bci
@@ -40,13 +42,13 @@
 .mbf
   margin-bottom: 0
 .mbxs
-  margin-bottom: (0.25 * $base-whitespace)
+  margin-bottom: em(0.25 * $base-whitespace)
 .mbs
-  margin-bottom: (0.5 * $base-whitespace)
+  margin-bottom: em(0.5 * $base-whitespace)
 .mbm
-  margin-bottom: $base-whitespace
+  margin-bottom: em($base-whitespace)
 .mbl
-  margin-bottom: (2 * $base-whitespace)
+  margin-bottom: em(2 * $base-whitespace)
 
 // ----- Horizontal ----- //
 
@@ -57,23 +59,29 @@
 // ----- Left ----- //
 
 .mlf
-  margin-right: 0
+  margin-left: 0
+.mls
+  margin-left: em(0.5 $base-whitespace)
 .mlm
-  margin-right: $base-whitespace
+  margin-left: em($base-whitespace)
 
 // ----- Right ----- //
 
 .mrf
   margin-right: 0
+.mrs
+  margin-right: em(0.5 $base-whitespace)
 .mrm
-  margin-right: $base-whitespace
+  margin-right: em($base-whitespace)
 
 // ----- Top ----- //
 
 .mtf
   margin-top: 0
+.mts
+  margin-top: em(0.5 $base-whitespace)
 .mtm
-  margin-top: $base-whitespace
+  margin-top: em($base-whitespace)
 
 // -------------------------------------
 //   Positioning

@@ -28,14 +28,14 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
 
 #{$grid-selector}grid
   @extend %group  // Uses MVCSS clearfix
-  display: block
+  @extend .db
   margin-left: -$grid-gutter / 2
   margin-right: -$grid-gutter / 2
 
 #{$grid-selector}grid-box
+  @extend .fl
   -moz-box-sizing: border-box
   box-sizing: border-box
-  float: left
   margin: 0
   padding-left: $grid-gutter / 2
   padding-right: $grid-gutter / 2
@@ -46,9 +46,9 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
 // -------------------------------------
 
 #{$grid-selector}grid-box--center
-  display: block
+  @extend .db
+  @extend .mhc
   float: none
-  margin: 0 auto
 
 // -------------------------------------
 //   Setup

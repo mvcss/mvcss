@@ -6,16 +6,6 @@
 //
 // *************************************
 
-// -------------------------------------
-//   Variables
-// -------------------------------------
-
-$bucket-media-margin: 15px !default
-
-// -------------------------------------
-//   Base
-// -------------------------------------
-
 .bucket
   @extend %group
 
@@ -44,5 +34,5 @@ $bucket-media-margin: 15px !default
 // ----- Media ----- //
 
 .bucket-media
-  float: left
-  margin-right: $bucket-media-margin
+  @extend .fl
+  @extend .mrs

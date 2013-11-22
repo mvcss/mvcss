@@ -6,10 +6,10 @@
 // *************************************
 
 html
+  @extend .bcb
+  @extend .ffb
   @extend .tcb
-  background: $color-background
   font-size: $base-fontSize
-  font-family: $font-base
   line-height: $base-lineHeight
 
 body
@@ -22,7 +22,7 @@ body
 ul, p
   @extend .mbm
   @extend .mtf
-  font-size: rem($base-fontSize)
+  font-size: em($base-fontSize)
 
 li
   @extend .mbs
@@ -34,7 +34,7 @@ h1, .h1,
 h2, .h2
   @extend .mbxs
   @extend .mtf
-  font-weight: bold
+  @extend .twb
   line-height: 1.2
 
 h1, .h1
@@ -49,9 +49,9 @@ h2, .h2
 
 a
   @extend .tch
-  border-bottom: 2px solid lighten($color-base, 70%)
+  border-bottom: $base-border
   text-decoration: none
   &:hover,
   &:focus
-    border-bottom-color: $color-subdue
-    color: $color-subdue
+    @extend .tcs
+    border-bottom-color: $color-highlight
