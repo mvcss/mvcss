@@ -1,61 +1,15 @@
 // *************************************
 //
 //   Helpers
-//   -> Extends, Functions, Mixins, Animations
+//   -> Functions, Mixins, Animations
 //
 // *************************************
-
-// -------------------------------------
-//   Extends
-// -------------------------------------
-
-// ----- Debug ----- //
-
-%debug
-  background-color: pink !important
-
-// ----- Ellipsis ----- //
-
-%ellipsis
-  overflow: hidden
-  text-overflow: ellipsis
-  white-space: nowrap
-
-// ----- Clearfix ----- //
-
-%group:after
-  clear: both
-  content: ''
-  display: table
-
-// ----- Image Replacement ----- //
-
-%ir
-  background-color: transparent
-  border: 0
-  overflow: hidden
-  &:before
-    content: ''
-    display: block
-    width: 0
-    height: 150%
 
 // -------------------------------------
 //   Functions
 // -------------------------------------
 
-// ----- em ----- //
-
-@function em($target, $context: $base-fontSize)
-  @if ($target == 0)
-    @return 0
-  @else
-    @return #{$target / $context}em
-
-// ----- rem ----- //
-
-@function rem($size)
-  @return #{$size / $base-fontSize}rem
+// ...
 
 // -------------------------------------
 //   Mixins
@@ -70,4 +24,6 @@
 // -------------------------------------
 //   Animations
 // -------------------------------------
+
+// ...
 
