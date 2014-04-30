@@ -1,14 +1,13 @@
 // *************************************
 //
-//   Cell
-//   -> Width-limiting blocks
+//   Well
+//   -> Vertical spacing
 //
 // *************************************
 
-.cell
-  @extend .mhc
-  max-width: $b-maxWidth
-  position: relative
+.well
+  @extend .mbm
+  @extend .mtm
 
 // -------------------------------------
 //   Modifiers
@@ -16,6 +15,7 @@
 
 // ----- Sizes ----- //
 
-.cell--s
-  max-width: $b-maxWidth-s
+.well.well--l
+  @extend .mbl
+  @extend .mtl
 
