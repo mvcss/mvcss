@@ -376,16 +376,16 @@ th {
     height: 150%; }
 
 .bcb {
-  background: #222222; }
+  background: #444444; }
 
 .bch {
-  background: #2980b9; }
+  background: #4e4e5b; }
 
 .bci {
   background: white; }
 
 .bcs {
-  background: #999999; }
+  background: #b5b5c0; }
 
 .db {
   display: block; }
@@ -596,16 +596,16 @@ th {
   text-align: center; }
 
 .tcb {
-  color: #222222; }
+  color: #444444; }
 
 .tch {
-  color: #2980b9; }
+  color: #4e4e5b; }
 
 .tci {
   color: white; }
 
 .tcs {
-  color: #999999; }
+  color: #b5b5c0; }
 
 .tfb {
   font-family: sans-serif; }
@@ -641,8 +641,8 @@ th {
   font-weight: bold; }
 
 html {
-  background: #f2f2f2;
-  color: #222222;
+  background: #ecf0f1;
+  color: #444444;
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5; }
@@ -681,12 +681,12 @@ h4, .h4 {
   font-size: 110%; }
 
 a {
-  border-bottom: 2px solid #cccccc;
-  color: #2980b9;
+  border-bottom: 2px solid #9a9aa8;
+  color: #4e4e5b;
   text-decoration: none; }
   a:hover, a:focus {
-    border-bottom-color: #2980b9;
-    color: #999999; }
+    border-bottom-color: #4e4e5b;
+    color: #b5b5c0; }
 
 .bucket--flag {
   display: table; }
@@ -706,7 +706,7 @@ a {
 .card {
   background: white;
   border-radius: 3px;
-  box-shadow: 0 2px 0 rgba(34, 34, 34, 0.15);
+  box-shadow: 0 2px 0 rgba(68, 68, 68, 0.25);
   padding: 1.25em;
   position: relative; }
 
@@ -959,10 +959,10 @@ a {
   padding: 0 1.25em; }
 
 .row--a {
-  background: #2980b9; }
+  background: #4e4e5b; }
 
 .row--b {
-  background: #222222; }
+  background: #444444; }
 
 .well {
   margin-bottom: 1.25em;
