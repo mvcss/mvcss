@@ -21,12 +21,6 @@ module.exports = function(grunt) {
       }
     },
 
-    csslint: {
-      strict: {
-        src: ['css/application.css']
-      }
-    },
-
     csscss: {
       dist: {
         src: ['css/application.css']
@@ -37,10 +31,9 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-csscss');
 
   grunt.registerTask('build', ['sass', 'cssmin']);
-  grunt.registerTask('test', ['csslint', 'csscss']);
+  grunt.registerTask('test', ['csscss']);
 
 };
