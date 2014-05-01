@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          '../css/application.css': '../application.sass'
+          'css/application.css': '../application.sass'
         }
       }
     },
@@ -14,22 +14,22 @@ module.exports = function(grunt) {
     cssmin: {
       minify: {
         expand: true,
-        cwd: '../css/',
+        cwd: 'css/',
         src: ['*.css'],
-        dest: '../css/',
+        dest: 'css/',
         ext: '.min.css'
       }
     },
 
     csslint: {
       strict: {
-        src: ['../css/application.css']
+        src: ['css/application.css']
       }
     },
 
     csscss: {
       dist: {
-        src: ['../css/application.css']
+        src: ['css/application.css']
       }
     }
 
