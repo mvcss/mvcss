@@ -1,9 +1,20 @@
 ## 4.0.0
 
-- **Core** becomes **Foundation** (same files)
-- Add a new layer called **Components**
+### Adds
+
+- **Components** section
+- **Tools** section
+- Initial **Components**
+
+### Removes
+
+- Nothing...
+
+### Changes
+
+- **Foundation** becomes **Core**
 - Modules become **Structures**
-- Add initial **Components**
+- **Settings** to **Config**
 
 ## 3.0.2
 
