@@ -1,44 +1,9 @@
 // *************************************
 //
 //   Helpers
-//   -> Extends, Functions, Mixins, Animations
+//   -> Functions, Mixins, Extends, Animations
 //
 // *************************************
-
-// -------------------------------------
-//   Extends
-// -------------------------------------
-
-// ----- Clearfix ----- //
-
-.group::after
-  clear: both
-  content: ''
-  display: table
-
-// ----- Debug ----- //
-
-.debug
-  background-color: pink !important
-
-// ----- Ellipsis ----- //
-
-.ellipsis
-  overflow: hidden
-  text-overflow: ellipsis
-  white-space: nowrap
-
-// ----- Image Replacement ----- //
-
-.ir
-  background-color: transparent
-  border: 0
-  overflow: hidden
-  &::before
-    content: ''
-    display: block
-    width: 0
-    height: 150%
 
 // -------------------------------------
 //   Functions
@@ -82,6 +47,41 @@
 =respond-to($val, $query: min-width, $media: screen)
   @media #{$media} and ($query: $val)
     @content
+
+// -------------------------------------
+//   Extends
+// -------------------------------------
+
+// ----- Clearfix ----- //
+
+.group::after
+  clear: both
+  content: ''
+  display: table
+
+// ----- Debug ----- //
+
+.debug
+  background-color: pink !important
+
+// ----- Ellipsis ----- //
+
+.ellipsis
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+// ----- Image Replacement ----- //
+
+.ir
+  background-color: transparent
+  border: 0
+  overflow: hidden
+  &::before
+    content: ''
+    display: block
+    width: 0
+    height: 150%
 
 // -------------------------------------
 //   Animations
