@@ -9,26 +9,51 @@
 //   @font-face
 // -------------------------------------
 
+// ----- Open Sans ----- //
+
 // +font-face('OpenSans', 'OpenSans')
 // +font-face('OpenSans', 'OpenSansBold', bold)
 // +font-face('OpenSans', 'OpenSansItalic', normal, italic)
 
 // -------------------------------------
-//   Variables
+//   Colors
 // -------------------------------------
+
+// ----- Palette ----- //
+
+$plum: #4e4e5b
 
 // ----- Base ----- //
 
-// Borders & Box Shadow
+$c-background-invert: #fff
+$c-background: #ecf0f1
+$c-highlight: $plum
+$c-subdue: lighten($plum, 40%)
+$c-text-invert: #fff
+$c-text: #444
 
-$b-borderColor: lighten(#4e4e5b, 30%)
+// ----- Components ----- //
+
+// ...
+
+// ----- Structures ----- //
+
+// ...
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderColor: lighten($plum, 30%)
 $b-borderRadius: 3px
 $b-borderStyle: solid
 $b-borderWidth: 2px
 $b-border: $b-borderWidth $b-borderStyle $b-borderColor
-$b-boxShadow: 0 2px 0 rgba(#444, 0.25)
+$b-boxShadow: 0 2px 0 rgba($c-text, 0.25)
 
-// Tyopography
+// ----- Typography ----- //
 
 $b-fontFamily-heading: sans-serif
 $b-fontFamily: sans-serif
@@ -40,31 +65,29 @@ $b-fontSize-l: 115%
 $b-fontSize-xl: 150%
 $b-lineHeight: 1.5
 
-// Sizing
+// ----- Sizing ----- //
 
-$b-maxWidth: 62.5em // ~1000px
-$b-maxWidth-s: 43.75em // ~700px
-$b-whitespace: 1.25em // ~20px
-$b-whitespace-xs: 0.25 * $b-whitespace
-$b-whitespace-s: 0.5 * $b-whitespace
-$b-whitespace-l: 2 * $b-whitespace
-$b-whitespace-xl: 4 * $b-whitespace
+$b-maxWidth: em(1000px)
+$b-maxWidth-s: em(700px)
+$b-space: 1.25em // ~ 20px
+$b-space-xs: 0.25 * $b-space
+$b-space-s: 0.5 * $b-space
+$b-space-l: 2 * $b-space
+$b-space-xl: 4 * $b-space
 
-// ----- Colors ----- //
-
-$c-background: #ecf0f1
-$c-base: #444
-$c-highlight: #4e4e5b
-$c-invert: #fff
-$c-subdue: lighten(#4e4e5b, 40%)
-
-// ----- Breakpoints ----- //
-
-$g-s: 30em // ~480px
-$g-m: 50em // ~800px
-$g-l: 64em // ~1024px
+// -------------------------------------
+//   Components
+// -------------------------------------
 
 // ----- Grid ----- //
 
-$grid-defaults: 's' $g-s, 'm' $g-m, 'l' $g-l
+$g-s: em(480px)
+$g-m: em(800px)
+$g-l: em(1024px)
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+// ...
 

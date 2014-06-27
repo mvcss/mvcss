@@ -9,11 +9,11 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .grid
-//   .grid-box[.grid-box--center|1of2|1of3|...]
-//   .grid-box[.grid-box--center|1of2|1of3|...]
-//   .grid-box[.grid-box--center|1of2|1of3|...]
-//   .grid-box[.grid-box--center|1of2|1of3|...]
+// .g
+//   .g-b[.g-b--center|1of2|1of3|...]
+//   .g-b[.g-b--center|1of2|1of3|...]
+//   .g-b[.g-b--center|1of2|1of3|...]
+//   .g-b[.g-b--center|1of2|1of3|...]
 //
 // *************************************
 
@@ -21,34 +21,34 @@
 //   Variables
 // -------------------------------------
 
-$grid-columns: 12 !default
-$grid-defaults: 'mobile' 480px, 'tablet' 800px, 'desk' 1024px !default
-$grid-gutter: 20px !default
-$grid-silent: false !default
+$g-columns: 12 !default
+$g-defaults: 's' 30em, 'm' 50em, 'l' 64em !default
+$g-gutter: 20px !default
+$g-silent: false !default
 
 // -------------------------------------
 //   Selector Type
 // -------------------------------------
 
-$grid-selector: if($grid-silent, unquote("%"), unquote("."))
+$g-selector: if($g-silent, unquote("%"), unquote("."))
 
 // -------------------------------------
 //   Base
 // -------------------------------------
 
-#{$grid-selector}grid
+#{$g-selector}g
   @extend .group
   display: block
-  margin-left: -$grid-gutter / 2
-  margin-right: -$grid-gutter / 2
+  margin-left: -$g-gutter / 2
+  margin-right: -$g-gutter / 2
 
-#{$grid-selector}grid-box
+#{$g-selector}g-b
   -moz-box-sizing: border-box
   box-sizing: border-box
   float: left
   margin: 0
-  padding-left: $grid-gutter / 2
-  padding-right: $grid-gutter / 2
+  padding-left: $g-gutter / 2
+  padding-right: $g-gutter / 2
   width: 100%
 
 // -------------------------------------
@@ -57,7 +57,7 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
 
 // ----- Center ----- //
 
-#{$grid-selector}grid-box--center
+#{$g-selector}g-b--center
   display: block
   float: none
   margin: 0 auto
@@ -70,122 +70,122 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
 
   // ----- One Part ----- //
 
-  #{$grid-selector}grid-box--#{$namespace}1of1
+  #{$g-selector}g-b--#{$namespace}1of1
     width: 100%
 
   // ----- Two Parts ----- //
 
-  #{$grid-selector}grid-box--#{$namespace}1of2
+  #{$g-selector}g-b--#{$namespace}1of2
     width: 50%
 
   // ----- Three Parts ----- //
 
-  @if $grid-columns >= 3
-    #{$grid-selector}grid-box--#{$namespace}1of3
+  @if $g-columns >= 3
+    #{$g-selector}g-b--#{$namespace}1of3
       width: 33.333%
-    #{$grid-selector}grid-box--#{$namespace}2of3
+    #{$g-selector}g-b--#{$namespace}2of3
       width: 66.666%
 
   // ----- Four Parts ----- //
 
-  @if $grid-columns >= 4
-    #{$grid-selector}grid-box--#{$namespace}1of4
+  @if $g-columns >= 4
+    #{$g-selector}g-b--#{$namespace}1of4
       width: 25%
-    #{$grid-selector}grid-box--#{$namespace}2of4
-      @extend #{$grid-selector}grid-box--#{$namespace}1of2
-    #{$grid-selector}grid-box--#{$namespace}3of4
+    #{$g-selector}g-b--#{$namespace}2of4
+      @extend #{$g-selector}g-b--#{$namespace}1of2
+    #{$g-selector}g-b--#{$namespace}3of4
       width: 75%
 
   // ----- Five Parts ----- //
 
-  @if $grid-columns >= 5
-    #{$grid-selector}grid-box--#{$namespace}1of5
+  @if $g-columns >= 5
+    #{$g-selector}g-b--#{$namespace}1of5
       width: 20%
-    #{$grid-selector}grid-box--#{$namespace}2of5
+    #{$g-selector}g-b--#{$namespace}2of5
       width: 40%
-    #{$grid-selector}grid-box--#{$namespace}3of5
+    #{$g-selector}g-b--#{$namespace}3of5
       width: 60%
-    #{$grid-selector}grid-box--#{$namespace}4of5
+    #{$g-selector}g-b--#{$namespace}4of5
       width: 80%
 
   // ----- Six Parts ----- //
 
-  @if $grid-columns >= 6
-    #{$grid-selector}grid-box--#{$namespace}1of6
+  @if $g-columns >= 6
+    #{$g-selector}g-b--#{$namespace}1of6
       width: 16.666%
-    #{$grid-selector}grid-box--#{$namespace}2of6
-      @extend #{$grid-selector}grid-box--#{$namespace}1of3
-    #{$grid-selector}grid-box--#{$namespace}3of6
-      @extend #{$grid-selector}grid-box--#{$namespace}1of2
-    #{$grid-selector}grid-box--#{$namespace}4of6
-      @extend #{$grid-selector}grid-box--#{$namespace}2of3
-    #{$grid-selector}grid-box--#{$namespace}5of6
+    #{$g-selector}g-b--#{$namespace}2of6
+      @extend #{$g-selector}g-b--#{$namespace}1of3
+    #{$g-selector}g-b--#{$namespace}3of6
+      @extend #{$g-selector}g-b--#{$namespace}1of2
+    #{$g-selector}g-b--#{$namespace}4of6
+      @extend #{$g-selector}g-b--#{$namespace}2of3
+    #{$g-selector}g-b--#{$namespace}5of6
       width: 83.333%
 
   // ----- Eight Parts ----- //
 
-  @if $grid-columns >= 8
-    #{$grid-selector}grid-box--#{$namespace}1of8
+  @if $g-columns >= 8
+    #{$g-selector}g-b--#{$namespace}1of8
       width: 12.5%
-    #{$grid-selector}grid-box--#{$namespace}2of8
-      @extend #{$grid-selector}grid-box--#{$namespace}1of4
-    #{$grid-selector}grid-box--#{$namespace}3of8
+    #{$g-selector}g-b--#{$namespace}2of8
+      @extend #{$g-selector}g-b--#{$namespace}1of4
+    #{$g-selector}g-b--#{$namespace}3of8
       width: 37.5%
-    #{$grid-selector}grid-box--#{$namespace}4of8
-      @extend #{$grid-selector}grid-box--#{$namespace}1of2
-    #{$grid-selector}grid-box--#{$namespace}5of8
+    #{$g-selector}g-b--#{$namespace}4of8
+      @extend #{$g-selector}g-b--#{$namespace}1of2
+    #{$g-selector}g-b--#{$namespace}5of8
       width: 62.5%
-    #{$grid-selector}grid-box--#{$namespace}6of8
-      @extend #{$grid-selector}grid-box--#{$namespace}3of4
-    #{$grid-selector}grid-box--#{$namespace}7of8
+    #{$g-selector}g-b--#{$namespace}6of8
+      @extend #{$g-selector}g-b--#{$namespace}3of4
+    #{$g-selector}g-b--#{$namespace}7of8
       width: 87.5%
 
   // ----- Ten Parts ----- //
 
-  @if $grid-columns >= 10
-    #{$grid-selector}grid-box--#{$namespace}1of10
+  @if $g-columns >= 10
+    #{$g-selector}g-b--#{$namespace}1of10
       width: 10%
-    #{$grid-selector}grid-box--#{$namespace}2of10
-      @extend #{$grid-selector}grid-box--#{$namespace}1of5
-    #{$grid-selector}grid-box--#{$namespace}3of10
+    #{$g-selector}g-b--#{$namespace}2of10
+      @extend #{$g-selector}g-b--#{$namespace}1of5
+    #{$g-selector}g-b--#{$namespace}3of10
       width: 30%
-    #{$grid-selector}grid-box--#{$namespace}4of10
-      @extend #{$grid-selector}grid-box--#{$namespace}2of5
-    #{$grid-selector}grid-box--#{$namespace}5of10
-      @extend #{$grid-selector}grid-box--#{$namespace}1of2
-    #{$grid-selector}grid-box--#{$namespace}6of10
-      @extend #{$grid-selector}grid-box--#{$namespace}3of5
-    #{$grid-selector}grid-box--#{$namespace}7of10
+    #{$g-selector}g-b--#{$namespace}4of10
+      @extend #{$g-selector}g-b--#{$namespace}2of5
+    #{$g-selector}g-b--#{$namespace}5of10
+      @extend #{$g-selector}g-b--#{$namespace}1of2
+    #{$g-selector}g-b--#{$namespace}6of10
+      @extend #{$g-selector}g-b--#{$namespace}3of5
+    #{$g-selector}g-b--#{$namespace}7of10
       width: 70%
-    #{$grid-selector}grid-box--#{$namespace}8of10
-      @extend #{$grid-selector}grid-box--#{$namespace}4of5
-    #{$grid-selector}grid-box--#{$namespace}9of10
+    #{$g-selector}g-b--#{$namespace}8of10
+      @extend #{$g-selector}g-b--#{$namespace}4of5
+    #{$g-selector}g-b--#{$namespace}9of10
       width: 90%
 
   // ----- Twelve Parts ----- //
 
-  @if $grid-columns >= 12
-    #{$grid-selector}grid-box--#{$namespace}1of12
+  @if $g-columns >= 12
+    #{$g-selector}g-b--#{$namespace}1of12
       width: 8.333%
-    #{$grid-selector}grid-box--#{$namespace}2of12
-      @extend #{$grid-selector}grid-box--#{$namespace}1of6
-    #{$grid-selector}grid-box--#{$namespace}3of12
-      @extend #{$grid-selector}grid-box--#{$namespace}1of4
-    #{$grid-selector}grid-box--#{$namespace}4of12
-      @extend #{$grid-selector}grid-box--#{$namespace}1of3
-    #{$grid-selector}grid-box--#{$namespace}5of12
+    #{$g-selector}g-b--#{$namespace}2of12
+      @extend #{$g-selector}g-b--#{$namespace}1of6
+    #{$g-selector}g-b--#{$namespace}3of12
+      @extend #{$g-selector}g-b--#{$namespace}1of4
+    #{$g-selector}g-b--#{$namespace}4of12
+      @extend #{$g-selector}g-b--#{$namespace}1of3
+    #{$g-selector}g-b--#{$namespace}5of12
       width: 41.666%
-    #{$grid-selector}grid-box--#{$namespace}6of12
-      @extend #{$grid-selector}grid-box--#{$namespace}1of2
-    #{$grid-selector}grid-box--#{$namespace}7of12
+    #{$g-selector}g-b--#{$namespace}6of12
+      @extend #{$g-selector}g-b--#{$namespace}1of2
+    #{$g-selector}g-b--#{$namespace}7of12
       width: 58.333%
-    #{$grid-selector}grid-box--#{$namespace}8of12
-      @extend #{$grid-selector}grid-box--#{$namespace}2of3
-    #{$grid-selector}grid-box--#{$namespace}9of12
-      @extend #{$grid-selector}grid-box--#{$namespace}3of4
-    #{$grid-selector}grid-box--#{$namespace}10of12
-      @extend #{$grid-selector}grid-box--#{$namespace}5of6
-    #{$grid-selector}grid-box--#{$namespace}11of12
+    #{$g-selector}g-b--#{$namespace}8of12
+      @extend #{$g-selector}g-b--#{$namespace}2of3
+    #{$g-selector}g-b--#{$namespace}9of12
+      @extend #{$g-selector}g-b--#{$namespace}3of4
+    #{$g-selector}g-b--#{$namespace}10of12
+      @extend #{$g-selector}g-b--#{$namespace}5of6
+    #{$g-selector}g-b--#{$namespace}11of12
       width: 91.666%
 
 // -------------------------------------
@@ -194,7 +194,7 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
 
 +device-type()
 
-@each $device in $grid-defaults
+@each $device in $g-defaults
   @media screen and (min-width: nth($device, 2))
     +device-type("#{nth($device, 1)}--")
 
