@@ -9,17 +9,7 @@
 //   Functions
 // -------------------------------------
 
-// ----- Em ----- //
-// -> Calculates an em value based on a pixel value
-//
-// $target - the targe size (in pixels)
-// $context - the context font-size
-
-@function em($target, $context: $b-fontSize)
-  @if ($target == 0)
-    @return 0
-  @else
-    @return #{$target / $context}em
+// ...
 
 // -------------------------------------
 //   Mixins
