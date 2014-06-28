@@ -1,4 +1,4 @@
-# [MVCSS v4.0.0-alpha](http://mvcss.github.com)
+# [MVCSS v4.0.0](http://mvcss.github.com)
 
 ## Compiling
 
