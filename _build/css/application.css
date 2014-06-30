@@ -453,7 +453,7 @@ img {
 .cell {
   margin-left: auto;
   margin-right: auto;
-  max-width: 62.5em;
+  max-width: 64em;
   position: relative; }
 
 .cell--s {

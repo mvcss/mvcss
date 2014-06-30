@@ -9,7 +9,17 @@
 //   Functions
 // -------------------------------------
 
-// ...
+// ----- Em ----- //
+// -> Converts pixel value to an em
+//
+// $target - the target pixel size
+// $context - the context font-size
+
+@function em($target, $context: $b-fontSize)
+  @if ($target == 0)
+    @return 0
+  @else
+    @return ($target / $context) * 1em
 
 // -------------------------------------
 //   Mixins
