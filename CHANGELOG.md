@@ -18,7 +18,7 @@ v4.0.0 - 2014-07-01
 ### Fixed
 
 - **Foundation** becomes **Core**
-- Modules become **/Components/Structures**
+- Modules become **Components/Structures**
 - **Settings** becomes **Config**
 
 v3.0.3
