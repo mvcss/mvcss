@@ -1,6 +1,8 @@
-# [MVCSS v4.0.0](http://mvcss.github.com)
+[MVCSS v4.0.0](http://mvcss.github.com)
+=======================================
 
-## Compiling
+Compiling
+---------
 
 If you want to compile MVCSS into an `application.css` (and `application.min.css`)
 file, you'll need to first install [Grunt.js](http://gruntjs.com):
@@ -22,13 +24,10 @@ And then run:
 grunt build
 ```
 
-You should now have a `css` directory at the root with the compiled CSS files.
+You should now have a `css` directory in `_build/` with the compiled CSS files.
 
-## Testing
+License
+-------
 
-Once you have compiled into `application.css`, you can run `grunt test` to run
-`csslint` and `csscss` on the file.
-
-## License
 MVCSS is licensed under the MIT License.
 
