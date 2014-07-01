@@ -1,6 +1,24 @@
+## 4.0.0
+
+### Adds
+
+- **Components** section
+- **Tools** section
+- Initial **Components**
+
+### Removes
+
+- Nothing...
+
+### Changes
+
+- **Foundation** becomes **Core**
+- Modules become **Structures**
+- **Settings** to **Config**
+
 ## 3.0.3
 
-- Update Normalize to v3.0.0
+- Update Normalize to v2.1.3
 
 ## 3.0.2
 

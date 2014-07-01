@@ -1,0 +1,101 @@
+// *************************************
+//
+//   Helpers
+//   -> Functions, Mixins, Extends, Animations
+//
+// *************************************
+
+// -------------------------------------
+//   Functions
+// -------------------------------------
+
+// ----- Em ----- //
+// -> Converts pixel value to an em
+//
+// $target - the target pixel size
+// $context - the context font-size
+
+@function em($target, $context: $b-fontSize)
+  @if ($target == 0)
+    @return 0
+  @else
+    @return ($target / $context) * 1em
+
+// -------------------------------------
+//   Mixins
+// -------------------------------------
+
+// ----- Font Face ----- //
+// -> https://github.com/thoughtbot/bourbon/edit/master/app/assets/stylesheets/css3/_font-face.scss#
+//
+// $family - the font-family
+// $path - the font path
+// $weight - the font-weight
+// $style - the font-style
+// $asset-pipeline - use the Rails asset pipeline (boolean)
+
+=font-face($family, $path, $weight: normal, $style: normal, $asset-pipeline: true)
+  @font-face
+    font-family: $family
+    font-style: $style
+    font-weight: $weight
+    @if $asset-pipeline == true
+      src: font-url('#{$path}.eot')
+      src: font-url('#{$path}.eot?#iefix') format('embedded-opentype'), font-url('#{$path}.woff') format('woff'), font-url('#{$path}.ttf') format('truetype'), font-url('#{$path}.svg##{$family}') format('svg')
+    @else
+      src: url('#{$path}.eot')
+      src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$family}') format('svg')
+
+// ----- Respond-to ----- //
+// -> Generates a media query
+//
+// $val - the breakpoint size
+// $query - the type of query ('min-width', 'max-width')
+// $media - the media type ('screen', 'print', etc.)
+// @content - the generated content within the mixin
+
+=respond-to($val, $query: min-width, $media: screen)
+  @media #{$media} and ($query: $val)
+    @content
+
+// -------------------------------------
+//   Extends
+// -------------------------------------
+
+// ----- Clearfix ----- //
+
+.group::after
+  clear: both
+  content: ''
+  display: table
+
+// ----- Debug ----- //
+
+.debug
+  background-color: pink !important
+
+// ----- Ellipsis ----- //
+
+.ellipsis
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+// ----- Image Replacement ----- //
+
+.ir
+  background-color: transparent
+  border: 0
+  overflow: hidden
+  &::before
+    content: ''
+    display: block
+    width: 0
+    height: 150%
+
+// -------------------------------------
+//   Animations
+// -------------------------------------
+
+// ...
+
