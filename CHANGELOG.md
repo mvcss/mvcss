@@ -1,40 +1,79 @@
-## 4.0.0
+Changelog
+=========
 
-### Adds
+v4.0.0 - 2014-07-01
+-------------------
 
-- **Components** section
+### Added
+
 - **Tools** section
-- Initial **Components**
+- **Components** section
+- Base **Components**
 
-### Removes
+### Removed
 
-- Nothing...
+- Core Content
+- Core Layout
 
-### Changes
+### Fixed
 
 - **Foundation** becomes **Core**
-- Modules become **Structures**
-- **Settings** to **Config**
+- Modules become **/Components/Structures**
+- **Settings** becomes **Config**
 
-## 3.0.3
+v3.0.3
+------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Update Normalize to v2.1.3
 
-## 3.0.2
+v3.0.2
+------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Update Normalize to v2.1.3
 
-## 3.0.1
+v3.0.1
+------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Change the comment hierarchy
 
-## 3.0.0
+v3.0.0
+------
+
+### Added
 
 - Add new **Core - Helper** file
 - Add new **Core - Content** file (replaces **Containers** Module file)
 - Add new **Core - Layout** file
-- Move extends, mixins, animations to new **Core - Helper** file
-- Change **Core - Reset** to **Normalize v2.1.1**
 - Add better variable naming conventions
 - Add more base variables
 - Add `em()` function
@@ -44,17 +83,56 @@
 - Add better documentation for **Application** file imports
 - Add better documentation for variables
 
-## 2.1.0
-**March 5, 2013**
+### Removed
 
-- Remove **States** as part of **Core**
+- Nothing
 
-## 2.0.1
-**March 5, 2013**
+### Fixed
+
+- Move extends, mixins, animations to new **Core - Helper** file
+- Change **Core - Reset** to **Normalize v2.1.1**
+
+v2.1.0 - 2013-03-05
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- **States** as part of **Core**
+
+### Fixed
+
+- Nothing
+
+v2.0.1 - 2013-03-05
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Modify the ellipsis, group, and ir extends
 
-## 2.0.0
-**February 22, 2013**
+v2.0.0 - 2013-02-22
+-------------------
+
+### Added
 
 - Initial version applied
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
