@@ -27,6 +27,7 @@ $plum: #4e4e5b
 
 $c-background-invert: #fff
 $c-background: #ecf0f1
+$c-border: lighten($plum, 30%)
 $c-highlight: $plum
 $c-subdue: lighten($plum, 40%)
 $c-text-invert: #fff
@@ -46,11 +47,10 @@ $c-text: #444
 
 // ----- Borders & Box Shadow ----- //
 
-$b-borderColor: lighten($plum, 30%)
 $b-borderRadius: 3px
 $b-borderStyle: solid
 $b-borderWidth: 2px
-$b-border: $b-borderWidth $b-borderStyle $b-borderColor
+$b-border: $b-borderWidth $b-borderStyle $c-border
 $b-boxShadow: 0 2px 0 rgba($c-text, 0.25)
 
 // ----- Typography ----- //

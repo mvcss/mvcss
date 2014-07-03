@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v4.0.1 - 2014-07-02
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Rename `$b-borderColor` to `$c-border`
+
 v4.0.0 - 2014-07-01
 -------------------
 
