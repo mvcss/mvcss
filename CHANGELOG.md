@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v4.0.2 - 2014-07-14
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Moved the grid variables to Config
+
 v4.0.1 - 2014-07-02
 -------------------
 
