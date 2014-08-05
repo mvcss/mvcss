@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v4.0.3 - 2014-08-05
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- `-moz-box-sizing` from the Grid Component
+
+### Fixed
+
+- Nothing
+
 v4.0.2 - 2014-07-14
 -------------------
 
