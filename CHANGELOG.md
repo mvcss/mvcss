@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v4.0.4 - 2014-11-24
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Changed inline operations to use trailing figures
+
 v4.0.3 - 2014-08-05
 -------------------
 
