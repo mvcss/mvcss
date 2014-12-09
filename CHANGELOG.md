@@ -1,8 +1,24 @@
 Changelog
 =========
 
-v4.0.5 - 2014-11-24
--------------------
+4.0.6 - 2014-12-09
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Prefix Grid Component `device-type` mixin
+- Update `application.sass` imports to use single quotes
+
+4.0.5 - 2014-11-24
+------------------
 
 ### Added
 
@@ -16,8 +32,8 @@ v4.0.5 - 2014-11-24
 
 - Update Reset to Normalize v3.0.2
 
-v4.0.4 - 2014-11-24
--------------------
+4.0.4 - 2014-11-24
+------------------
 
 ### Added
 
@@ -31,8 +47,8 @@ v4.0.4 - 2014-11-24
 
 - Changed inline operations to use trailing figures
 
-v4.0.3 - 2014-08-05
--------------------
+4.0.3 - 2014-08-05
+------------------
 
 ### Added
 
@@ -46,8 +62,8 @@ v4.0.3 - 2014-08-05
 
 - Nothing
 
-v4.0.2 - 2014-07-14
--------------------
+4.0.2 - 2014-07-14
+------------------
 
 ### Added
 
@@ -61,8 +77,8 @@ v4.0.2 - 2014-07-14
 
 - Moved the grid variables to Config
 
-v4.0.1 - 2014-07-02
--------------------
+4.0.1 - 2014-07-02
+------------------
 
 ### Added
 
@@ -76,8 +92,8 @@ v4.0.1 - 2014-07-02
 
 - Rename `$b-borderColor` to `$c-border`
 
-v4.0.0 - 2014-07-01
--------------------
+4.0.0 - 2014-07-01
+------------------
 
 ### Added
 
@@ -96,8 +112,8 @@ v4.0.0 - 2014-07-01
 - Modules become **Components/Structures**
 - **Settings** becomes **Config**
 
-v3.0.3
-------
+3.0.3
+-----
 
 ### Added
 
@@ -111,8 +127,8 @@ v3.0.3
 
 - Update Normalize to v2.1.3
 
-v3.0.2
-------
+3.0.2
+-----
 
 ### Added
 
@@ -126,8 +142,8 @@ v3.0.2
 
 - Update Normalize to v2.1.3
 
-v3.0.1
-------
+3.0.1
+-----
 
 ### Added
 
@@ -141,8 +157,8 @@ v3.0.1
 
 - Change the comment hierarchy
 
-v3.0.0
-------
+3.0.0
+-----
 
 ### Added
 
@@ -167,8 +183,8 @@ v3.0.0
 - Move extends, mixins, animations to new **Core - Helper** file
 - Change **Core - Reset** to **Normalize v2.1.1**
 
-v2.1.0 - 2013-03-05
--------------------
+2.1.0 - 2013-03-05
+------------------
 
 ### Added
 
@@ -182,8 +198,8 @@ v2.1.0 - 2013-03-05
 
 - Nothing
 
-v2.0.1 - 2013-03-05
--------------------
+2.0.1 - 2013-03-05
+------------------
 
 ### Added
 
@@ -197,8 +213,8 @@ v2.0.1 - 2013-03-05
 
 - Modify the ellipsis, group, and ir extends
 
-v2.0.0 - 2013-02-22
--------------------
+2.0.0 - 2013-02-22
+------------------
 
 ### Added
 
