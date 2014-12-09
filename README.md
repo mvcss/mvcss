@@ -4,7 +4,7 @@ MVCSS
 Contributing
 ------------
 
-We use [Semantic Versioning](http://semver.org) for all versioning. When you make a Major, Minor, or Patch update, you'll need to the do the following:
+We use [Semantic Versioning](http://semver.org) for all versioning. When you make a **Major**, **Minor**, or **Patch** update, you'll need to the do the following:
 
 - Run the build to update the build files (`grunt build`) and verify nothing breaks
 - Update the `CHANGELOG.md` file
