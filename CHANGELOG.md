@@ -1,6 +1,21 @@
 Changelog
 =========
 
+4.0.7 - 2015-01-07
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Add single-line space before nested blocks
+
 4.0.6 - 2014-12-09
 ------------------
 
