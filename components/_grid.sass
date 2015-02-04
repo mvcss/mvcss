@@ -10,10 +10,12 @@
 // -------------------------------------
 //
 // .g
-//   .g-b[.g-b--center|1of2|1of3|...]
-//   .g-b[.g-b--center|1of2|1of3|...]
-//   .g-b[.g-b--center|1of2|1of3|...]
-//   .g-b[.g-b--center|1of2|1of3|...]
+//
+//   .g-b[center 1of2|...]
+//     / ...
+//
+//   .g-b[center 1of2|...]
+//     / ...
 //
 // *************************************
 
@@ -181,4 +183,3 @@
 @each $device in $g-defaults
   @media screen and (min-width: nth($device, 2))
     +g-device-type("#{nth($device, 1)}--")
-

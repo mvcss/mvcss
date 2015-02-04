@@ -1,6 +1,21 @@
 Changelog
 =========
 
+4.0.8 - 2015-02-04
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- The Sass comment Haml template documentation
+
 4.0.7 - 2015-01-07
 ------------------
 
