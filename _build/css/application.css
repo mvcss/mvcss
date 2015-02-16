@@ -376,8 +376,8 @@ th {
   .ir::before {
     content: "";
     display: block;
-    width: 0;
-    height: 150%; }
+    height: 150%;
+    width: 0; }
 
 html {
   background: #ecf0f1;
