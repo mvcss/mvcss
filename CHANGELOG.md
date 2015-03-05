@@ -1,6 +1,21 @@
 Changelog
 =========
 
+4.0.10 - 2015-03-05
+-------------------
+
+### Added
+
+- `$b-fontSize` heading variables
+
+### Removed
+
+- End-of-file newlines
+
+### Fixed
+
+- Nothing
+
 4.0.9 - 2015-03-04
 ------------------
 
