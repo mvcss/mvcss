@@ -465,15 +465,15 @@ img {
 
 .g {
   display: block;
-  margin-left: -10px;
-  margin-right: -10px; }
+  margin-left: -0.625em;
+  margin-right: -0.625em; }
 
 .g-b {
   box-sizing: border-box;
   float: left;
   margin: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
   width: 100%; }
 
 .g-b--center {
