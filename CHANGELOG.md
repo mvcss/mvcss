@@ -1,6 +1,21 @@
 Changelog
 =========
 
+4.0.11 - 2015-04-02
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update `$g-gutter` to use `$b-space` value
+
 4.0.10 - 2015-03-05
 -------------------
 
