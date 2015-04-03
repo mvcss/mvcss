@@ -1,6 +1,21 @@
 Changelog
 =========
 
+4.0.12 - 2015-04-02
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update Grid to use single-direction gutter
+
 4.0.11 - 2015-04-02
 -------------------
 
