@@ -1,6 +1,21 @@
 Changelog
 =========
 
+4.0.13 - 2015-04-06
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update Reset to Normalize v3.0.3
+
 4.0.12 - 2015-04-02
 -------------------
 
