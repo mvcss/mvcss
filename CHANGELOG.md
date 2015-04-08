@@ -1,6 +1,51 @@
 Changelog
 =========
 
+4.0.13 - 2015-04-06
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update Reset to Normalize v3.0.3
+
+4.0.12 - 2015-04-02
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update Grid to use single-direction gutter
+
+4.0.11 - 2015-04-02
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update `$g-gutter` to use `$b-space` value
+
 4.0.10 - 2015-03-05
 -------------------
 
