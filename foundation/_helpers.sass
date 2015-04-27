@@ -21,6 +21,15 @@
   @else
     @return ($target / $context) * 1em
 
+// ----- Font Size ----- //
+// -> Converts pixel value to a percentage
+//
+// $target - the target pixel size
+// $context - the context font-size
+
+@function font-size($target, $context: $b-fontSize)
+  @return percentage($target / $context)
+
 // -------------------------------------
 //   Mixins
 // -------------------------------------
