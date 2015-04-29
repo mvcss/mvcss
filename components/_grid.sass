@@ -56,9 +56,8 @@
     @if $column != $g-columns
       #{$g-selector}g-b--#{$namespace}#{$column}of#{$g-columns}
         width: percentage($column/$g-columns)
-    
-    @if $column < $g-columns and $g-columns % 2 == 0
-      @for $division from 1 to ($g-columns / 2)
+
+      @for $division from 1 to $g-columns
         @if $column % $division == 0 and $g-columns % $division == 0
           #{$g-selector}g-b--#{$namespace}#{$column / $division}of#{$g-columns / $division}
             @extend #{$g-selector}g-b--#{$namespace}#{$column}of#{$g-columns}
