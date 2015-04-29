@@ -52,7 +52,7 @@
 
 =g-device-type($namespace: '')
 
-  @for $column from $g-columns to 0
+  @for $column from 1 to $g-columns
     @if $column != $g-columns
       #{$g-selector}g-b--#{$namespace}#{$column}of#{$g-columns}
         width: percentage($column/$g-columns)
