@@ -1,6 +1,21 @@
 Changelog
 =========
 
+4.0.14 - 2015-05-01
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Automate the grid creation
+
 4.0.13 - 2015-04-06
 -------------------
 
