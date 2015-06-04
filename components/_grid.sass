@@ -55,15 +55,17 @@
   #{$g-selector}g-b--#{$namespace}1of1
     width: 100%
 
-  @for $column from 1 to $g-columns
-    @if $column != $g-columns
-      #{$g-selector}g-b--#{$namespace}#{$column}of#{$g-columns}
-        width: percentage($column/$g-columns)
+  @each $g-unit in $g-columns
 
-      @for $division from 1 to $g-columns
-        @if $column % $division == 0 and $g-columns % $division == 0
-          #{$g-selector}g-b--#{$namespace}#{$column / $division}of#{$g-columns / $division}
-            @extend #{$g-selector}g-b--#{$namespace}#{$column}of#{$g-columns}
+    @for $column from 1 to $g-unit
+      @if $column != $g-unit
+        #{$g-selector}g-b--#{$namespace}#{$column}of#{$g-unit}
+          width: percentage($column / $g-unit)
+
+        @for $division from 1 to $g-unit
+          @if $column % $division == 0 and $g-unit % $division == 0
+            #{$g-selector}g-b--#{$namespace}#{$column / $division}of#{$g-unit / $division}
+              @extend #{$g-selector}g-b--#{$namespace}#{$column}of#{$g-unit}
 
 // -------------------------------------
 //   Creation
