@@ -1,6 +1,21 @@
 Changelog
 =========
 
+4.0.15 - 2015-06-04
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Bring back missing grid (`xofx`) classes
+
 4.0.14 - 2015-05-01
 -------------------
 
