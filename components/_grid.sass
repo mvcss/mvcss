@@ -9,12 +9,9 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .g
+// .mv-g
 //
-//   .g-b[center 1of2|...]
-//     / ...
-//
-//   .g-b[center 1of2|...]
+//   .mv-g-b--1of12
 //     / ...
 //
 // *************************************
@@ -38,10 +35,10 @@
 
 // ----- Grid ----- //
 
-.g--c
+.mv-g--c
   justify-content: center
 
-.g--r
+.mv-g--r
   justify-content: flex-end
 
 // -------------------------------------
@@ -50,23 +47,23 @@
 
 // ----- None ----- //
 
-.g--f
+.mv-g--f
   margin-left: 0
-  > .g-b
+  > .mv-g-b
     padding-left: 0
 
 // ----- Large ----- //
 
-.g--l
+.mv-g--l
   margin-left: -$b-space-l
-  > .g-b
+  > .mv-g-b
     padding-left: $b-space-l
 
 // ----- Small ----- //
 
-.g--s
+.mv-g--s
   margin-left: -$b-space-s
-  > .g-b
+  > .mv-g-b
     padding-left: $b-space-s
 
 // -------------------------------------
