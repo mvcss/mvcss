@@ -49,21 +49,6 @@ $b-borderWidth: 2px;
 $b-border: $b-borderWidth $b-borderStyle $c-border;
 $b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
 
-// ----- Typography ----- //
-
-$b-fontFamily-heading: sans-serif;
-$b-fontFamily: sans-serif;
-$b-fontSize: 16px;
-$b-fontSize-xs: 12px;
-$b-fontSize-s: 14px;
-$b-fontSize-l: 18px;
-$b-fontSize-xl: 24px;
-$b-fontSize-h1: 32px;
-$b-fontSize-h2: 24px;
-$b-fontSize-h3: 20px;
-$b-fontSize-h4: 18px;
-$b-lineHeight: 1.5;
-
 // ----- Sizing ----- //
 
 $b-maxWidth: 1024px;
@@ -72,6 +57,37 @@ $b-space-025: $b-space * 0.25;
 $b-space-05: $b-space * 0.5;
 $b-space-2: $b-space * 2;
 $b-space-4: $b-space * 4;
+
+// -------------------------------------
+//   Typography
+// -------------------------------------
+
+// ----- Family ----- //
+
+$t-fontFamily: sans-serif;
+
+// Headings
+
+$t-heading-fontFamily: sans-serif;
+
+// ----- Line Height ----- //
+
+$t-lineHeight: 1.5;
+
+// ----- Size ----- //
+
+$t-fontSize: 16px;
+$t-fontSize-xs: 12px;
+$t-fontSize-s: 14px;
+$t-fontSize-l: 18px;
+$t-fontSize-xl: 24px;
+
+// Headings
+
+$t-heading-fontSize-h1: 32px;
+$t-heading-fontSize-h2: 24px;
+$t-heading-fontSize-h3: 20px;
+$t-heading-fontSize-h4: 18px;
 
 // -------------------------------------
 //   Components
