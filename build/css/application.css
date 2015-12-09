@@ -394,12 +394,12 @@ h4, .h4 {
   font-size: 18px; }
 
 a {
-  border-bottom: 2px solid #9a9aa8;
+  border-bottom: 2px solid #95959d;
   color: #4e4e5b;
   text-decoration: none; }
   a:hover, a:focus {
     border-bottom-color: #4e4e5b;
-    color: #b5b5c0; }
+    color: #95959d; }
 
 img {
   height: auto;
@@ -1074,7 +1074,7 @@ img {
   background-color: #4e4e5b; }
 
 .mv-row--b {
-  background-color: #b5b5c0; }
+  background-color: #95959d; }
 
 .mv-well {
   margin-bottom: 20px;
@@ -1084,14 +1084,20 @@ img {
   margin-bottom: 40px;
   margin-top: 40px; }
 
-.bch {
+.bc-plum {
   background-color: #4e4e5b; }
 
-.bci {
-  background-color: #fff; }
+.bc-plum-t1 {
+  background-color: #95959d; }
 
-.bcs {
-  background-color: #b5b5c0; }
+.bc-porcelain {
+  background-color: #ecf0f1; }
+
+.bc-slate {
+  background-color: #444; }
+
+.bc-white {
+  background-color: #fff; }
 
 .db {
   display: block; }
@@ -1324,17 +1330,17 @@ img {
 .tac {
   text-align: center; }
 
-.tch {
+.tc-plum {
   color: #4e4e5b; }
 
-.tci {
-  color: #fff; }
+.tc-plum-t1 {
+  color: #95959d; }
 
-.tcs {
-  color: #b5b5c0; }
-
-.tct {
+.tc-slate {
   color: #444; }
+
+.tc-white {
+  color: #fff; }
 
 .tfb {
   font-family: sans-serif; }

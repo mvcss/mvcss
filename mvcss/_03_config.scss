@@ -17,17 +17,19 @@
 
 // ----- Palette ----- //
 
+// Gray
+
+$porcelain: #ecf0f1;
+$slate: #444;
+
+// Purple
+
 $plum: #4e4e5b;
+$plum-t1: tint($plum, 40%);
 
-// ----- Base ----- //
+// White
 
-$c-background-invert: #fff;
-$c-background: #ecf0f1;
-$c-border: lighten($plum, 30%);
-$c-highlight: $plum;
-$c-subdue: lighten($plum, 40%);
-$c-text-invert: #fff;
-$c-text: #444;
+$white: #fff;
 
 // ----- Components ----- //
 
@@ -46,8 +48,8 @@ $c-text: #444;
 $b-borderRadius: 3px;
 $b-borderStyle: solid;
 $b-borderWidth: 2px;
-$b-border: $b-borderWidth $b-borderStyle $c-border;
-$b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
+$b-border: $b-borderWidth $b-borderStyle $plum-t1;
+$b-boxShadow: 0 2px 0 rgba($slate, 0.25);
 
 // ----- Sizing ----- //
 
