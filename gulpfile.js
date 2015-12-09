@@ -59,7 +59,7 @@ var options = {
   // ----- Build ----- //
 
   build : {
-    tasks       : [ 'minify' ],
+    tasks       : [ 'compile', 'minify' ],
     destination : 'build/css'
   },
 
