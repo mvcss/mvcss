@@ -74,7 +74,7 @@ var options = {
   // ----- Sass ----- //
 
   sass : {
-    files       : [ '*.sass', '**/*.sass' ],
+    files       : [ '*.sass', '**/*.sass', '**/**/*.sass' ],
     destination : 'build/css'
   },
 
