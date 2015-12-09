@@ -1,23 +1,23 @@
 // *************************************
 //
-//   Bucket
+//  Bucket
 //   -> Media-supported content
 //
 // -------------------------------------
 //   Template (Haml)
 // -------------------------------------
 //
-// .bucket[flag]
+// .mv-bucket[flag]
 //
-//   .bucket-media
+//   .mv-bucket-media
 //     / ...
 //
-//   .bucket-content
+//   .mv-bucket-content
 //     / ...
 //
 // *************************************
 
-.bucket
+.mv-bucket
   display: flex
 
 // -------------------------------------
@@ -26,7 +26,7 @@
 
 // ----- Flag ----- //
 
-.bucket--flag
+.mv-bucket--flag
   align-items: center
 
 // -------------------------------------
@@ -35,12 +35,12 @@
 
 // ----- Content ----- //
 
-.bucket-content
+.mv-bucket-content
   flex-grow: 1
 
 // ----- Media ----- //
 
-.bucket-media
+.mv-bucket-media
   flex-shrink: 0
   margin-right: $b-space
 

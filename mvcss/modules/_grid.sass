@@ -9,12 +9,12 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .g
+// .mv-g
 //
-//   .g-b[center 1of2|...]
+//   .mv-g-b[center 1of2|...]
 //     / ...
 //
-//   .g-b[center 1of2|...]
+//   .mv-g-b[center 1of2|...]
 //     / ...
 //
 // *************************************
@@ -23,12 +23,12 @@
 //   Base
 // -------------------------------------
 
-#{$g-selector}g
+#{$g-selector}mv-g
   @extend .group
   display: block
   margin-left: -$g-gutter
 
-#{$g-selector}g-b
+#{$g-selector}mv-g-b
   box-sizing: border-box
   float: left
   margin: 0
@@ -41,7 +41,7 @@
 
 // ----- Center ----- //
 
-#{$g-selector}g-b--center
+#{$g-selector}mv-g-b--center
   display: block
   float: none
   margin: 0 auto
@@ -52,18 +52,18 @@
 
 =g-device-type($namespace: '')
 
-  #{$g-selector}g-b--#{$namespace}1of1
+  #{$g-selector}mv-g-b--#{$namespace}1of1
     width: 100%
 
   @for $unit from 1 to $g-columns + 1
     @for $column from 1 to $unit
-      #{$g-selector}g-b--#{$namespace}#{$column}of#{$unit}
+      #{$g-selector}mv-g-b--#{$namespace}#{$column}of#{$unit}
         width: percentage($column / $unit)
 
       @for $division from 1 to $unit
         @if $column % $division == 0 and $unit % $division == 0
-          #{$g-selector}g-b--#{$namespace}#{$column / $division}of#{$unit / $division}
-            @extend #{$g-selector}g-b--#{$namespace}#{$column}of#{$unit}
+          #{$g-selector}mv-g-b--#{$namespace}#{$column / $division}of#{$unit / $division}
+            @extend #{$g-selector}mv-g-b--#{$namespace}#{$column}of#{$unit}
 
 // -------------------------------------
 //   Creation
