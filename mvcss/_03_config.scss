@@ -54,20 +54,20 @@ $b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
 $b-fontFamily-heading: sans-serif;
 $b-fontFamily: sans-serif;
 $b-fontSize: 16px;
-$b-fontSize-xs: font-size(12px);
-$b-fontSize-s: font-size(14px);
-$b-fontSize-l: font-size(18px);
-$b-fontSize-xl: font-size(24px);
-$b-fontSize-h1: font-size(32px);
-$b-fontSize-h2: font-size(24px);
-$b-fontSize-h3: font-size(20px);
-$b-fontSize-h4: font-size(18px);
+$b-fontSize-xs: 12px;
+$b-fontSize-s: 14px;
+$b-fontSize-l: 18px;
+$b-fontSize-xl: 24px;
+$b-fontSize-h1: 32px;
+$b-fontSize-h2: 24px;
+$b-fontSize-h3: 20px;
+$b-fontSize-h4: 18px;
 $b-lineHeight: 1.5;
 
 // ----- Sizing ----- //
 
-$b-maxWidth: em(1024px);
-$b-space: em(20px);
+$b-maxWidth: 1024px;
+$b-space: 20px;
 $b-space-025: $b-space * 0.25;
 $b-space-05: $b-space * 0.5;
 $b-space-2: $b-space * 2;
@@ -81,9 +81,9 @@ $b-space-4: $b-space * 4;
 
 // Breakpoints
 
-$g-s: em(480px);
-$g-m: em(800px);
-$g-l: em(1024px);
+$g-s: 480px;
+$g-m: 800px;
+$g-l: 1024px;
 
 // Settings
 
