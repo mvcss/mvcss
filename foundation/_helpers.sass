@@ -1,7 +1,7 @@
 // *************************************
 //
 //   Helpers
-//   -> Functions, Mixins, Extends, Animations
+//   -> Functions, Mixins, Animations
 //
 // *************************************
 
@@ -54,6 +54,15 @@
 //   Mixins
 // -------------------------------------
 
+// ----- Group ----- //
+// -> Clearfix
+
+=group
+  &::after
+    clear: both
+    content: ''
+    display: table
+
 // ----- Respond-to ----- //
 // -> Generates a media query
 //
@@ -65,17 +74,6 @@
 =respond-to($val, $query: min-width, $media: screen)
   @media #{$media} and ($query: $val)
     @content
-
-// -------------------------------------
-//   Extends
-// -------------------------------------
-
-// ----- Clearfix ----- //
-
-.group::after
-  clear: both
-  content: ''
-  display: table
 
 // -------------------------------------
 //   Animations
