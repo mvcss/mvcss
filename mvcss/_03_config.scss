@@ -112,7 +112,7 @@ $g-silent: false;
 
 // Selector
 
-$g-selector: if($g-silent, unquote("%"), unquote("."));
+$g-selector: if($g-silent, unquote('%'), unquote('.'));
 
 // -------------------------------------
 //   Structures
