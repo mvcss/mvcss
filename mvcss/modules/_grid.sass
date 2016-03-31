@@ -11,7 +11,10 @@
 //
 // .mv-g
 //
-//   .mv-g-b--1of12
+//   .mv-g-b
+//     / ...
+//
+//   .mv-g-b
 //     / ...
 //
 // *************************************
@@ -20,12 +23,13 @@
 //   Base
 // -------------------------------------
 
-.mv-g
+#{$g-selector}mv-g
   display: flex
   flex-wrap: wrap
   margin-left: -$b-space
 
-.mv-g-b
+#{$g-selector}mv-g-b
+  flex: none 1
   padding-left: $b-space
   width: 100%
 
@@ -35,10 +39,10 @@
 
 // ----- Grid ----- //
 
-.mv-g--c
+#{$g-selector}mv-g--center
   justify-content: center
 
-.mv-g--r
+#{$g-selector}mv-g--right
   justify-content: flex-end
 
 // -------------------------------------
@@ -74,8 +78,16 @@
 
   @each $unit in $g-columns
     @for $column from 1 to $unit + 1
-      .mv-g-b--#{$column}of#{$unit}#{$namespace}
+      #{$g-selector}mv-g-b--#{$column}of#{$unit}#{$namespace}
         width: percentage($column / $unit)
+
+      @for $division from 1 to $unit
+        @if $column % $division == 0 and $unit % $division == 0
+          #{$g-selector}mv-g-b--#{$column / $division}of#{$unit / $division}#{$namespace}
+            @extend #{$g-selector}mv-g-b--#{$column}of#{$unit}#{$namespace}
+
+  #{$g-selector}mv-g-b--1of1#{$namespace}
+    width: 100%
 
 // -------------------------------------
 //   Creation
