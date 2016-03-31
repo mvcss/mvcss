@@ -1,4 +1,4 @@
 .DS_Store
 .sass-cache/
-_build/node_modules
-_build/css/application.css.map
+node_modules
+build/css/application.css.map

@@ -1,0 +1,61 @@
+// *************************************
+//
+//   Helpers
+//   -> Functions, Mixins, Animations
+//
+// *************************************
+
+// -------------------------------------
+//   Functions
+// -------------------------------------
+
+// ----- Shade ----- //
+// -> Slightly darken a color
+//    via: http://sass-guidelin.es/#lightening-and-darkening-colors (modified)
+//
+// $color - the color to shade
+// $percentage - the percentage of black to add to `$color`
+
+@function shade($color, $percentage)
+  @return mix(black, $color, $percentage)
+
+// ----- Tint ----- //
+// -> Slightly lighten a color
+//    Via: http://sass-guidelin.es/#lightening-and-darkening-colors (modified)
+//
+// $color - the color to tint
+// $percentage - the percentage of white to add to `$color`
+
+@function tint($color, $percentage)
+  @return mix(white, $color, $percentage)
+
+// -------------------------------------
+//   Mixins
+// -------------------------------------
+
+// ----- Group ----- //
+// -> Clearfix
+
+=group
+  &::after
+    clear: both
+    content: ''
+    display: table
+
+// ----- Respond-to ----- //
+// -> Generates a media query
+//
+// $val - the breakpoint size
+// $query - the type of query ('min-width', 'max-width')
+// $media - the media type ('screen', 'print', etc.)
+// @content - the generated content within the mixin
+
+=respond-to($val, $query: min-width, $media: screen)
+  @media #{$media} and ($query: $val)
+    @content
+
+// -------------------------------------
+//   Animations
+// -------------------------------------
+
+// ...

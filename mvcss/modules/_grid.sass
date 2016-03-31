@@ -1,0 +1,126 @@
+// *************************************
+//
+//   Grid
+//   -> Based on the following:
+//      * https://github.com/necolas/suit-grid
+//      * https://github.com/csswizardry/csswizardry-grids
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .mv-g
+//
+//   .mv-g-b
+//     / ...
+//
+//   .mv-g-b
+//     / ...
+//
+// *************************************
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+#{$g-selector}mv-g
+  display: flex
+  flex-wrap: wrap
+  margin-left: -$b-space
+
+#{$g-selector}mv-g-b
+  flex: none 1
+  order: 100
+  padding-left: $b-space
+  width: 100%
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Grid ----- //
+
+#{$g-selector}mv-g--center
+  justify-content: center
+
+#{$g-selector}mv-g--right
+  justify-content: flex-end
+
+// -------------------------------------
+//   Gutters
+// -------------------------------------
+
+// ----- None ----- //
+
+.mv-g--f
+  margin-left: 0
+  > .mv-g-b
+    padding-left: 0
+
+// ----- Large ----- //
+
+.mv-g--l
+  margin-left: -$b-space-l
+  > .mv-g-b
+    padding-left: $b-space-l
+
+// ----- Small ----- //
+
+.mv-g--s
+  margin-left: -$b-space-s
+  > .mv-g-b
+    padding-left: $b-space-s
+
+// -------------------------------------
+//   Setup
+// -------------------------------------
+
+=g-device-type($namespace: '')
+
+  @each $unit in $g-columns
+    @for $column from 1 through $unit
+      #{$g-selector}mv-g-b--#{$column}of#{$unit}#{$namespace}
+        width: percentage($column / $unit)
+
+      @for $division from 1 to $unit
+        @if $column % $division == 0 and $unit % $division == 0
+          #{$g-selector}mv-g-b--#{$column / $division}of#{$unit / $division}#{$namespace}
+            @extend #{$g-selector}mv-g-b--#{$column}of#{$unit}#{$namespace}
+
+  #{$g-selector}mv-g-b--1of1#{$namespace}
+    width: 100%
+
+  #{$g-selector}mv-g-b--first#{$namespace}
+    order: 0
+  #{$g-selector}mv-g-b--second#{$namespace}
+    order: 101
+  #{$g-selector}mv-g-b--third#{$namespace}
+    order: 102
+  #{$g-selector}mv-g-b--fourth#{$namespace}
+    order: 103
+  #{$g-selector}mv-g-b--fifth#{$namespace}
+    order: 104
+  #{$g-selector}mv-g-b--sixth#{$namespace}
+    order: 105
+  #{$g-selector}mv-g-b--seventh#{$namespace}
+    order: 106
+  #{$g-selector}mv-g-b--eighth#{$namespace}
+    order: 107
+  #{$g-selector}mv-g-b--ninth#{$namespace}
+    order: 108
+  #{$g-selector}mv-g-b--tenth#{$namespace}
+    order: 109
+  #{$g-selector}mv-g-b--eleventh#{$namespace}
+    order: 110
+  #{$g-selector}mv-g-b--twelvth#{$namespace}
+    order: 111
+
+// -------------------------------------
+//   Creation
+// -------------------------------------
+
++g-device-type()
+
+@each $device in $g-defaults
+  @media screen and (min-width: nth($device, 2))
+    +g-device-type("_#{nth($device, 1)}")

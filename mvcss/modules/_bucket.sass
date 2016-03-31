@@ -1,25 +1,24 @@
 // *************************************
 //
-//   Bucket
-//   -> Based on:
-//      * http://jsfiddle.net/necolas/rZvEF/
+//  Bucket
+//   -> Media-supported content
 //
 // -------------------------------------
 //   Template (Haml)
 // -------------------------------------
 //
-// .bucket[flag]
+// .mv-bucket[flag]
 //
-//   .bucket-media
+//   .mv-bucket-media
 //     / ...
 //
-//   .bucket-content
+//   .mv-bucket-content
 //     / ...
 //
 // *************************************
 
-.bucket
-  @extend .group
+.mv-bucket
+  display: flex
 
 // -------------------------------------
 //   Modifiers
@@ -27,11 +26,8 @@
 
 // ----- Flag ----- //
 
-.bucket--flag
-  display: table
-
-  .bucket-content
-    vertical-align: middle
+.mv-bucket--flag
+  align-items: center
 
 // -------------------------------------
 //   Scaffolding
@@ -39,16 +35,14 @@
 
 // ----- Content ----- //
 
-.bucket-content
-  display: table-cell
-  width: 10000px
+.mv-bucket-content
+  flex-grow: 1
 
 // ----- Media ----- //
 
-.bucket-media
-  float: left
+.mv-bucket-media
+  flex-shrink: 0
   margin-right: $b-space
 
   > img
     display: block
-    max-width: none
