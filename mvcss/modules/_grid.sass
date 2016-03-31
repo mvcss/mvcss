@@ -78,7 +78,7 @@
 =g-device-type($namespace: '')
 
   @each $unit in $g-columns
-    @for $column from 1 to $unit + 1
+    @for $column from 1 through $unit
       #{$g-selector}mv-g-b--#{$column}of#{$unit}#{$namespace}
         width: percentage($column / $unit)
 
