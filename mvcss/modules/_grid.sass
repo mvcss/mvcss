@@ -35,6 +35,8 @@
 //   Scaffolding
 // -------------------------------------
 
+// ----- Box ----- //
+
 .mv-g-b
   padding-left: $g-gutter
   width: 100%
@@ -45,9 +47,10 @@
 
 =g-device-type($namespace: '')
 
-  @for $index from 1 through $g-columns
-    .mv-g-b--#{$index}of#{$g-columns}#{$namespace}
-      width: percentage($index / $g-columns)
+  @each $item in $g-columns
+    @for $index from 1 through $item
+      .mv-g-b--#{$index}of#{$item}#{$namespace}
+        width: percentage($index / $item)
 
 // -------------------------------------
 //   Creation
