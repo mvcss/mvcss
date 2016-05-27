@@ -11,10 +11,10 @@
 //
 // .mv-g
 //
-//   .mv-g-b[center 1of2|...]
+//   .mv-g-b
 //     / ...
 //
-//   .mv-g-b[center 1of2|...]
+//   .mv-g-b
 //     / ...
 //
 // *************************************
@@ -24,27 +24,52 @@
 // -------------------------------------
 
 #{$g-selector}mv-g
-  +group
-  display: block
-  margin-left: -$g-gutter
+  display: flex
+  flex-wrap: wrap
+  margin-left: -$b-space
 
 #{$g-selector}mv-g-b
-  box-sizing: border-box
-  float: left
-  margin: 0
-  padding-left: $g-gutter
+  flex: none 1
+  order: 100
+  padding-left: $b-space
   width: 100%
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-// ----- Center ----- //
+// ----- Grid ----- //
 
-#{$g-selector}mv-g-b--center
-  display: block
-  float: none
-  margin: 0 auto
+#{$g-selector}mv-g--center
+  justify-content: center
+
+#{$g-selector}mv-g--right
+  justify-content: flex-end
+
+// -------------------------------------
+//   Gutters
+// -------------------------------------
+
+// ----- None ----- //
+
+.mv-g--f
+  margin-left: 0
+  > .mv-g-b
+    padding-left: 0
+
+// ----- Large ----- //
+
+.mv-g--l
+  margin-left: -$b-space-l
+  > .mv-g-b
+    padding-left: $b-space-l
+
+// ----- Small ----- //
+
+.mv-g--s
+  margin-left: -$b-space-s
+  > .mv-g-b
+    padding-left: $b-space-s
 
 // -------------------------------------
 //   Setup
@@ -52,18 +77,43 @@
 
 =g-device-type($namespace: '')
 
-  #{$g-selector}mv-g-b--#{$namespace}1of1
-    width: 100%
-
-  @for $unit from 1 to $g-columns + 1
-    @for $column from 1 to $unit
-      #{$g-selector}mv-g-b--#{$namespace}#{$column}of#{$unit}
+  @each $unit in $g-columns
+    @for $column from 1 through $unit
+      #{$g-selector}mv-g-b--#{$column}of#{$unit}#{$namespace}
         width: percentage($column / $unit)
 
       @for $division from 1 to $unit
         @if $column % $division == 0 and $unit % $division == 0
-          #{$g-selector}mv-g-b--#{$namespace}#{$column / $division}of#{$unit / $division}
-            @extend #{$g-selector}mv-g-b--#{$namespace}#{$column}of#{$unit}
+          #{$g-selector}mv-g-b--#{$column / $division}of#{$unit / $division}#{$namespace}
+            @extend #{$g-selector}mv-g-b--#{$column}of#{$unit}#{$namespace}
+
+  #{$g-selector}mv-g-b--1of1#{$namespace}
+    width: 100%
+
+  #{$g-selector}mv-g-b--first#{$namespace}
+    order: 0
+  #{$g-selector}mv-g-b--second#{$namespace}
+    order: 101
+  #{$g-selector}mv-g-b--third#{$namespace}
+    order: 102
+  #{$g-selector}mv-g-b--fourth#{$namespace}
+    order: 103
+  #{$g-selector}mv-g-b--fifth#{$namespace}
+    order: 104
+  #{$g-selector}mv-g-b--sixth#{$namespace}
+    order: 105
+  #{$g-selector}mv-g-b--seventh#{$namespace}
+    order: 106
+  #{$g-selector}mv-g-b--eighth#{$namespace}
+    order: 107
+  #{$g-selector}mv-g-b--ninth#{$namespace}
+    order: 108
+  #{$g-selector}mv-g-b--tenth#{$namespace}
+    order: 109
+  #{$g-selector}mv-g-b--eleventh#{$namespace}
+    order: 110
+  #{$g-selector}mv-g-b--twelvth#{$namespace}
+    order: 111
 
 // -------------------------------------
 //   Creation
@@ -73,4 +123,4 @@
 
 @each $device in $g-defaults
   @media screen and (min-width: nth($device, 2))
-    +g-device-type("#{nth($device, 1)}--")
+    +g-device-type("_#{nth($device, 1)}")
