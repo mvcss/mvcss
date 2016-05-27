@@ -1,0 +1,64 @@
+// *************************************
+//
+//   Grid
+//   -> Section layout
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .mv-g
+//
+//   .mv-g-b[1of12|...]
+//     / ...
+//
+//   .mv-g-b[1of12|...]
+//     / ...
+//
+// *************************************
+
+.mv-g
+  display: flex
+  flex-wrap: wrap
+  margin-left: -$g-gutter
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Grid ----- //
+
+.mv-g--center
+  justify-content: center
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Box ----- //
+
+.mv-g-b
+  padding-left: $g-gutter
+  width: 100%
+
+// -------------------------------------
+//   Setup
+// -------------------------------------
+
+=g-device-type($namespace: '')
+
+  @each $item in $g-columns
+    @for $index from 1 through $item
+      .mv-g-b--#{$index}of#{$item}#{$namespace}
+        width: percentage($index / $item)
+
+// -------------------------------------
+//   Creation
+// -------------------------------------
+
++g-device-type()
+
+@if $g-defaults
+  @each $breakpoint, $width in $g-defaults
+    @media screen and (min-width: $width)
+      +g-device-type("_#{$breakpoint}")

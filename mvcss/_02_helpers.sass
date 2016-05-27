@@ -9,27 +9,6 @@
 //   Functions
 // -------------------------------------
 
-// ----- Em ----- //
-// -> Converts pixel value to an em
-//
-// $target - the target pixel size
-// $context - the context font-size
-
-@function em($target, $context: $b-fontSize)
-  @if ($target == 0)
-    @return 0
-  @else
-    @return ($target / $context) * 1em
-
-// ----- Font Size ----- //
-// -> Converts pixel value to a percentage
-//
-// $target - the target pixel size
-// $context - the context font-size
-
-@function font-size($target, $context: $b-fontSize)
-  @return percentage($target / $context)
-
 // ----- Shade ----- //
 // -> Slightly darken a color
 //    via: http://sass-guidelin.es/#lightening-and-darkening-colors (modified)
@@ -53,15 +32,6 @@
 // -------------------------------------
 //   Mixins
 // -------------------------------------
-
-// ----- Group ----- //
-// -> Clearfix
-
-=group
-  &::after
-    clear: both
-    content: ''
-    display: table
 
 // ----- Respond-to ----- //
 // -> Generates a media query

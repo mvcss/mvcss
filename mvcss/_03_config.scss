@@ -1,0 +1,116 @@
+// *************************************
+//
+//   Config
+//   -> Fonts, Variables
+//
+// *************************************
+
+// -------------------------------------
+//   @font-face
+// -------------------------------------
+
+// ...
+
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Palette ----- //
+
+// Gray
+
+$porcelain: #ecf0f1;
+$slate: #444;
+
+// Purple
+
+$plum: #4e4e5b;
+$plum-t1: tint($plum, 40%);
+
+// White
+
+$white: #fff;
+
+// ----- Components ----- //
+
+// ...
+
+// ----- Structures ----- //
+
+// ...
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderRadius: 3px;
+$b-borderStyle: solid;
+$b-borderWidth: 2px;
+$b-border: $b-borderWidth $b-borderStyle $plum-t1;
+$b-boxShadow: 0 2px 0 rgba($slate, 0.25);
+
+// ----- Sizing ----- //
+
+$b-maxWidth: 1024px;
+$b-space: 20px;
+$b-space-025: $b-space * 0.25;
+$b-space-05: $b-space * 0.5;
+$b-space-2: $b-space * 2;
+$b-space-4: $b-space * 4;
+
+// -------------------------------------
+//   Typography
+// -------------------------------------
+
+// ----- Family ----- //
+
+$t-fontFamily: sans-serif;
+
+// Headings
+
+$t-heading-fontFamily: sans-serif;
+
+// ----- Line Height ----- //
+
+$t-lineHeight: 1.5;
+
+// ----- Size ----- //
+
+$t-fontSize: 16px;
+$t-fontSize-xs: 12px;
+$t-fontSize-s: 14px;
+$t-fontSize-l: 18px;
+$t-fontSize-xl: 24px;
+
+// Headings
+
+$t-heading-fontSize-h1: 32px;
+$t-heading-fontSize-h2: 24px;
+$t-heading-fontSize-h3: 20px;
+$t-heading-fontSize-h4: 18px;
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+// ----- Grid ----- //
+
+// Breakpoints
+
+$g-s: 480px;
+$g-m: 800px;
+$g-l: 1024px;
+
+// Settings
+
+$g-columns: 12;
+$g-defaults: (s: $g-s, m: $g-m, l: $g-l);
+$g-gutter: $b-space;
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+// ...
