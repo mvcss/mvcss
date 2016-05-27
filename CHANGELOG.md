@@ -1,6 +1,21 @@
 Changelog
 =========
 
+4.1.1 - 2016-05-27
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Version number
+
 4.1.0 - 2016-05-27
 -------------------
 
