@@ -1,7 +1,7 @@
 // *************************************
 //
 //   Helpers
-//   -> Functions, Mixins, Extends, Animations
+//   -> Functions, Mixins, Animations
 //
 // *************************************
 
@@ -21,30 +21,47 @@
   @else
     @return ($target / $context) * 1em
 
+// ----- Font Size ----- //
+// -> Converts pixel value to a percentage
+//
+// $target - the target pixel size
+// $context - the context font-size
+
+@function font-size($target, $context: $b-fontSize)
+  @return percentage($target / $context)
+
+// ----- Shade ----- //
+// -> Slightly darken a color
+//    via: http://sass-guidelin.es/#lightening-and-darkening-colors (modified)
+//
+// $color - the color to shade
+// $percentage - the percentage of black to add to `$color`
+
+@function shade($color, $percentage)
+  @return mix(black, $color, $percentage)
+
+// ----- Tint ----- //
+// -> Slightly lighten a color
+//    Via: http://sass-guidelin.es/#lightening-and-darkening-colors (modified)
+//
+// $color - the color to tint
+// $percentage - the percentage of white to add to `$color`
+
+@function tint($color, $percentage)
+  @return mix(white, $color, $percentage)
+
 // -------------------------------------
 //   Mixins
 // -------------------------------------
 
-// ----- Font Face ----- //
-// -> https://github.com/thoughtbot/bourbon/edit/master/app/assets/stylesheets/css3/_font-face.scss#
-//
-// $family - the font-family
-// $path - the font path
-// $weight - the font-weight
-// $style - the font-style
-// $asset-pipeline - use the Rails asset pipeline (boolean)
+// ----- Group ----- //
+// -> Clearfix
 
-=font-face($family, $path, $weight: normal, $style: normal, $asset-pipeline: true)
-  @font-face
-    font-family: $family
-    font-style: $style
-    font-weight: $weight
-    @if $asset-pipeline == true
-      src: font-url('#{$path}.eot')
-      src: font-url('#{$path}.eot?#iefix') format('embedded-opentype'), font-url('#{$path}.woff') format('woff'), font-url('#{$path}.ttf') format('truetype'), font-url('#{$path}.svg##{$family}') format('svg')
-    @else
-      src: url('#{$path}.eot')
-      src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$family}') format('svg')
+=group
+  &::after
+    clear: both
+    content: ''
+    display: table
 
 // ----- Respond-to ----- //
 // -> Generates a media query
@@ -57,42 +74,6 @@
 =respond-to($val, $query: min-width, $media: screen)
   @media #{$media} and ($query: $val)
     @content
-
-// -------------------------------------
-//   Extends
-// -------------------------------------
-
-// ----- Clearfix ----- //
-
-.group::after
-  clear: both
-  content: ''
-  display: table
-
-// ----- Debug ----- //
-
-.debug
-  background-color: pink !important
-
-// ----- Ellipsis ----- //
-
-.ellipsis
-  overflow: hidden
-  text-overflow: ellipsis
-  white-space: nowrap
-
-// ----- Image Replacement ----- //
-
-.ir
-  background-color: transparent
-  border: 0
-  overflow: hidden
-
-  &::before
-    content: ''
-    display: block
-    height: 150%
-    width: 0
 
 // -------------------------------------
 //   Animations
