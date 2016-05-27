@@ -58,6 +58,7 @@
 
 +g-device-type()
 
-@each $device in $g-defaults
-  @media screen and (min-width: nth($device, 2))
-    +g-device-type("_#{nth($device, 1)}")
+@if $g-defaults
+  @each $breakpoint, $width in $g-defaults
+    @media screen and (min-width: $width)
+      +g-device-type("_#{$breakpoint}")
