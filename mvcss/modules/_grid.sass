@@ -45,18 +45,9 @@
 
 =g-device-type($namespace: '')
 
-  @each $unit in $g-columns
-    @for $column from 1 through $unit
-      .mv-g-b--#{$column}of#{$unit}#{$namespace}
-        width: percentage($column / $unit)
-
-      @for $division from 1 to $unit
-        @if $column % $division == 0 and $unit % $division == 0
-          .mv-g-b--#{$column / $division}of#{$unit / $division}#{$namespace}
-            @extend .mv-g-b--#{$column}of#{$unit}#{$namespace}
-
-  .mv-g-b--1of1#{$namespace}
-    width: 100%
+  @for $index from 1 through $g-columns
+    .mv-g-b--#{$index}of#{$g-columns}#{$namespace}
+      width: percentage($index / $g-columns)
 
 // -------------------------------------
 //   Creation
