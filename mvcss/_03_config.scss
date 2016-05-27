@@ -108,11 +108,6 @@ $g-l: 1024px;
 $g-columns: 12;
 $g-defaults: (s: $g-s, m: $g-m, l: $g-l);
 $g-gutter: $b-space;
-$g-silent: false;
-
-// Selector
-
-$g-selector: if($g-silent, unquote('%'), unquote('.'));
 
 // -------------------------------------
 //   Structures
