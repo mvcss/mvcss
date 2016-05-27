@@ -1,6 +1,25 @@
 Changelog
 =========
 
+4.1.0 - 2016-05-27
+-------------------
+
+### Added
+
+- font-size function
+- shade and tint functions
+- Change extends to mixins
+- Replace Grunt with Gulp
+
+### Removed
+
+- .debug, .ellipsis, .ir extends
+- =font-face mixin
+
+### Fixed
+
+- Change `background` to `background-color`
+
 4.0.15 - 2015-06-04
 -------------------
 
